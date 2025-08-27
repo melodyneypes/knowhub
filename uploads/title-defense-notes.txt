@@ -1,0 +1,29 @@
+TITLE PROPOSAL FORMAT (4 TITLES NEEDED)
+
+Proposed Title
+
+by
+Members name
+
+Date
+
+Background of the Study (Short description of the study)
+-Rationale (Why the study is important and why it’s being done)
+-Reason for conducting the study (Statement of the problems, State the problems or questions you're trying to solve or answer.)
+
+Scope
+-Area/Processes to be included in the study
+example given is a sign language dictionary:
+Scope:
+Area: The project will focus on creating a dictionary for American Sign Language (ASL).
+Processes: The processes will include compiling a list of commonly used signs, organizing them alphabetically, and developing visual representations (videos or images) for each sign.
+The area is ASL, and the processes involve gathering, organizing, and presenting the signs in a clear way. You would focus on these tasks and exclude things like sign language history or grammar in this specific project.
+
+
+another example: Something about games
+Scope:
+Area: The project will focus on developing a 2D mobile game for casual players.
+Processes: The processes will include game design, coding the game mechanics, creating simple graphics, implementing sound effects, and testing gameplay.
+In this case, the area is mobile game development, and the processes include the main steps involved in creating a playable, enjoyable game, from design to testing. You wouldn’t include advanced 3D graphics, virtual reality, or extensive multiplayer features in this scope.
+
+Target Locale (if possible)

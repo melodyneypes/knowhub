@@ -1,0 +1,32 @@
+4 CHOSEN TITLES 
+
+NEEDED TO DISCUSS FOR PRESENTATION:
+
+-BAKIT ITO YUNG NAPILI? GOAL, NAISIP NA PROBLEM, AND SOLUTION, SIGNIFICANCE
+-EXPLAIN WHAT THE PROJECT IS BASED SA TITLE
+-POSSIBLE FEATURES
+-POSSIBLE PANEL QUESTIONS ABOUT THE CHOSEN PROPOSAL
+-ANSWERS SA MGA POSSIBLE QUESTIONS
+-ANONG SOFTWARE/LANGUAGES/FRAMEWORKS ANG GAGAMITIN
+-POTENTIAL TARGET/USERS/MARKET
+-BAKA TANUNGIN DIN ANONG AMBAG(MA'AM MAJO STYLE)
+Questions from chatgpt (hard level, miss universe calibre)
+-How does the title reflect the main objective or goal of your capstone?
+-How did you identify the problem that your project addresses?
+-Why is this problem important to address in the context of your field (BSIT)?
+-Scope and  What are its limitations?
+-Will your project be scalable or adaptable to other contexts? If so, how?
+-What approach or methodology will you use to complete your capstone?
+-What are the main steps in your methodology, and why did you choose them?
+-How do you plan to validate the effectiveness or success of your solution?
+-What is the timeline for your project, and what are the key milestones?
+-How do you plan to manage time effectively to ensure timely completion?
+-What do you hope to achieve by the end of the project?
+-How do you plan to measure the success of your project?
+-What impact do you anticipate your project will have in the field?
+-Is this project feasible to complete within the time frame and given resources?
+-Have you considered potential challenges or risks, and how do you plan to address them?
+-How could your project be expanded in the future?
+-Are there any potential real-world applications for the results of your capstone?
+-Have you researched similar projects or systems? How does your work differ?
+-What gaps in existing research or solutions is your project aiming to fill?
