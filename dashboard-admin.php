@@ -78,7 +78,6 @@ $req_stmt->close();
         <h5 class="text-center mb-4"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></h5>
         <nav class="nav flex-column">
             <a class="nav-link active" href="dashboard-admin.php"><i class="bi bi-house"></i> Home</a>
-            <a class="nav-link" href="profile_settings.php"><i class="bi bi-person"></i> Edit Profile</a>
             <a class="nav-link" href="admin_notifications.php"><i class="bi bi-bell"></i> Notifications</a>
             <a class="nav-link" href="manage_instructors.php"><i class="bi bi-people"></i> Manage Subject Instructors</a>
             <a class="nav-link" href="threads-admin.php"><i class="bi bi-chat-dots"></i> Forums</a>

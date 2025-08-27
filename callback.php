@@ -1,12 +1,16 @@
 <?php
 session_start();
-require_once 'vendor/autoload.php'; // Ensure you have the Google API client installed
-require_once 'db.php'; // Include your database connection
+require_once 'vendor/autoload.php';
+require_once 'db.php'; 
 
-// Create Google client
+// Load environment variables from .env file
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Get the secrets from the environment variables
 $client = new Google\Client();
-$client->setClientId('207510262129-19qlbi8qqudppurf1juulig88qd74qra.apps.googleusercontent.com'); // Replace with your Client ID
-$client->setClientSecret('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'); // Replace with your Client Secret
+$client->setClientId($_ENV['GOOGLE_CLIENT_ID']); 
+$client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET']);
 
 // Get the ID token from the POST request
 $data = json_decode(file_get_contents('php://input'), true);
