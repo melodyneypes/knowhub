@@ -19,7 +19,7 @@ $tag_filter = $_GET['tag'] ?? '';
 $instructor_filter = $_GET['instructor'] ?? '';
 
 // Fetch all subjects
-$stmt = $conn->prepare("SELECT DISTINCT subject_code, subject_name FROM subjects ORDER BY subject_code");
+$stmt = $conn->prepare("SELECT DISTINCT id, name FROM subjects ORDER BY year_level");
 $stmt->execute();
 $subjects_result = $stmt->get_result();
 $subjects = [];
@@ -49,7 +49,7 @@ while ($row = $tags_result->fetch_assoc()) {
 $stmt->close();
 
 // Build the query for resources
-$sql = "SELECT r.*, u.name as uploader_name, s.subject_name, s.subject_code 
+$sql = "SELECT r.*, u.name as uploader_name, s.name, s.id 
         FROM resources r 
         JOIN users u ON r.uploader_id = u.id 
         LEFT JOIN subjects s ON r.subject_id = s.id 
@@ -60,15 +60,15 @@ $types = "";
 
 // Add search condition
 if (!empty($search_query)) {
-    $sql .= " AND (r.title LIKE ? OR r.description LIKE ? OR r.keywords LIKE ?)";
+    $sql .= " AND (r.title LIKE ? OR r.description LIKE ?)";
     $search_param = "%$search_query%";
-    array_push($params, $search_param, $search_param, $search_param);
-    $types .= "sss";
+    array_push($params, $search_param, $search_param);
+    $types .= "ss";
 }
 
 // Add subject filter
 if (!empty($subject_filter)) {
-    $sql .= " AND s.subject_code = ?";
+    $sql .= " AND s.id = ?";
     $params[] = $subject_filter;
     $types .= "s";
 }
@@ -229,8 +229,8 @@ $stmt->close();
                             <select name="subject" class="form-select">
                                 <option value="">All Subjects</option>
                                 <?php foreach ($subjects as $subject): ?>
-                                    <option value="<?php echo htmlspecialchars($subject['subject_code']); ?>" <?php echo ($subject_filter === $subject['subject_code']) ? 'selected' : ''; ?>>
-                                        <?php echo htmlspecialchars($subject['subject_code'] . ' - ' . $subject['subject_name']); ?>
+                                    <option value="<?php echo htmlspecialchars($subject['id']); ?>" <?php echo ($subject_filter === $subject['id']) ? 'selected' : ''; ?>>
+                                        <?php echo htmlspecialchars($subject['id'] . ' - ' . $subject['name']); ?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>
@@ -241,8 +241,8 @@ $stmt->close();
                             <select name="tag" class="form-select">
                                 <option value="">All Tags</option>
                                 <?php foreach ($tags as $tag): ?>
-                                    <option value="<?php echo htmlspecialchars($tag['tag_name']); ?>" <?php echo ($tag_filter === $tag['tag_name']) ? 'selected' : ''; ?>>
-                                        <?php echo htmlspecialchars($tag['tag_name']); ?>
+                                    <option value="<?php echo htmlspecialchars($tag['tag']); ?>" <?php echo ($tag_filter === $tag['tag']) ? 'selected' : ''; ?>>
+                                        <?php echo htmlspecialchars($tag['tag']); ?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>
@@ -293,11 +293,11 @@ $stmt->close();
                             <p><?php echo htmlspecialchars($resource['description']); ?></p>
                             
                             <div class="mb-2">
-                                <?php if (!empty($resource['subject_code'])): ?>
+                                <?php if (!empty($resource['id'])): ?>
                                     <span class="subject-badge">
-                                        <?php echo htmlspecialchars($resource['subject_code']); ?>
+                                        <?php echo htmlspecialchars($resource['id']); ?>
                                         <?php if (!empty($resource['subject_name'])): ?>
-                                            - <?php echo htmlspecialchars($resource['subject_name']); ?>
+                                            - <?php echo htmlspecialchars($resource['name']); ?>
                                         <?php endif; ?>
                                     </span>
                                 <?php endif; ?>
@@ -309,7 +309,7 @@ $stmt->close();
                             
                             <?php
                             // Fetch tags for this resource
-                            $tag_stmt = $conn->prepare("SELECT tag_name FROM resource_tags WHERE resource_id = ?");
+                            $tag_stmt = $conn->prepare("SELECT tag FROM resource_tags WHERE resource_id = ?");
                             $tag_stmt->bind_param("i", $resource['id']);
                             $tag_stmt->execute();
                             $tags_result = $tag_stmt->get_result();
@@ -318,7 +318,7 @@ $stmt->close();
                             <?php if ($tags_result->num_rows > 0): ?>
                                 <div class="mb-3">
                                     <?php while ($tag = $tags_result->fetch_assoc()): ?>
-                                        <span class="tag"><?php echo htmlspecialchars($tag['tag_name']); ?></span>
+                                        <span class="tag"><?php echo htmlspecialchars($tag['tag']); ?></span>
                                     <?php endwhile; ?>
                                 </div>
                             <?php endif; ?>
@@ -417,8 +417,8 @@ $stmt->close();
                             <select name="subject" class="form-select">
                                 <option value="">All Subjects</option>
                                 <?php foreach ($subjects as $subject): ?>
-                                    <option value="<?php echo htmlspecialchars($subject['subject_code']); ?>" <?php echo ($subject_filter === $subject['subject_code']) ? 'selected' : ''; ?>>
-                                        <?php echo htmlspecialchars($subject['subject_code'] . ' - ' . $subject['subject_name']); ?>
+                                    <option value="<?php echo htmlspecialchars($subject['id']); ?>" <?php echo ($subject_filter === $subject['id']) ? 'selected' : ''; ?>>
+                                        <?php echo htmlspecialchars($subject['id'] . ' - ' . $subject['name']); ?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>
@@ -429,8 +429,8 @@ $stmt->close();
                             <select name="tag" class="form-select">
                                 <option value="">All Tags</option>
                                 <?php foreach ($tags as $tag): ?>
-                                    <option value="<?php echo htmlspecialchars($tag['tag_name']); ?>" <?php echo ($tag_filter === $tag['tag_name']) ? 'selected' : ''; ?>>
-                                        <?php echo htmlspecialchars($tag['tag_name']); ?>
+                                    <option value="<?php echo htmlspecialchars($tag['tag']); ?>" <?php echo ($tag_filter === $tag['tag']) ? 'selected' : ''; ?>>
+                                        <?php echo htmlspecialchars($tag['tag']); ?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>
