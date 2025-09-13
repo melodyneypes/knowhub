@@ -144,7 +144,12 @@ $stmt->close();
                                                 <h5 class="card-title"><?php echo htmlspecialchars($upload['title']); ?></h5>
                                                 <p class="card-text"><?php echo htmlspecialchars($upload['description']); ?></p>
                                                 <p class="card-text"><small class="text-muted">Uploaded: <?php echo htmlspecialchars($upload['created_at']); ?></small></p>
-                                                <a href="<?php echo htmlspecialchars($upload['file_path']); ?>" class="btn btn-primary" target="_blank">View Upload</a>
+                                                <a href="<?php echo 'http://127.0.0.1:3000/' . $upload['file_path']; ?>" class="btn btn-primary" target="_blank">View Upload</a>
+                                                <a href="version_history.php?resource_id=<?php echo $upload['id']; ?>" class="btn btn-outline-primary">Version History</a>
+                                                
+                                                <!-- Embed ONLYOFFICE Docs viewer/editor -->
+                                                <a href="onlyoffice_editor.php?file=<?php echo urlencode('http://host.docker.internal:3000/' . $upload['file_path']); ?>&title=<?php echo urlencode($upload['title']); ?>" class="btn btn-success">Edit in ONLYOFFICE</a>
+                                           
                                             </div>
                                         </div>
                                     </div>

@@ -32,13 +32,26 @@ try {
         $picture = $payload['picture'];
 
         // Determine the user's role based on the email
-        $role = null;
+       $role = null;
         if (strpos($email, '@psu.edu.ph') !== false && strpos($email, 'ac') !== false) {
             $role = 'student';
         } elseif (strpos($email, '@gmail.com') !== false && strpos($email, 'admn') !== false) {
             $role = 'admin';
-        } elseif (strpos($email, '@gmail.com') !== false) {
+        } elseif (strpos($email, '@gmail.com') !== false && strpos($email,'ac') !==false) {
             $role = 'instructor';
+        } elseif (strpos($email, '@gmail.com') !== false) {
+            // Check if this Gmail user is an approved alumni
+            $stmt = $conn->prepare("SELECT role FROM users WHERE email = ? AND role = 'alumni'");
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            
+            if ($result->num_rows > 0) {
+                $role = 'alumni';
+            } else {
+                echo json_encode(['success' => false, 'message' => 'Access denied: Only PSU accounts and approved alumni can access this system.']);
+                exit();
+            }
         } else {
             echo json_encode(['success' => false, 'message' => 'Access denied: Only PSU and Gmail accounts are allowed.']);
             exit();

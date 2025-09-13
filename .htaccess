@@ -1,0 +1,8 @@
+# Enable file access
+<Files "uploads/*">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# If using mod_rewrite
+RewriteEngine On

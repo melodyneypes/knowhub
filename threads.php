@@ -147,23 +147,35 @@ $result_threads = $stmt->get_result();
         <div class="container">
             <a class="navbar-brand fw-bold" style="color: #126682d1;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="dashboard-<?php echo $user_role === 'student' ? 'student' : 'admin'; ?>.php">Home</a>
-                </li>
+               <a class="nav-link" href="dashboard-<?php echo $user_role; ?>.php">Home</a>
                 <?php if ($user_role === 'student'): ?>
                 <li>
                     <a class="nav-link" href="dashboard-student.php">My Subjects</a>
                 </li>
-                <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link" href="browse.php">Browse</a>
                 </li>
+                <?php endif; ?>
+
+                <?php if ($user_role === 'instructor'): ?>
+                 <li>
+                    <a class="nav-link" href="subjects-handled.php">My Handled Subjects</a>
+                </li>
+                <?php endif; ?>
+
                 <li class="nav-item">
                     <a class="nav-link active" href="threads.php">Forums</a>
                 </li>
+
+                 <?php if ($user_role === 'student'): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="external.php">External Resources</a>
+                </li> 
+                <?php else: ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="external-instructor.php">External Resources</a>
                 </li>
+                <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link" style="color: red;" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
                 </li>

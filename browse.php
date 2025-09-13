@@ -167,6 +167,25 @@ $stmt->close();
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+         .access-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        .access-granted {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .access-denied {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .access-pending {
+            background-color: #fff3cd;
+            color: #856404;
+        }
     </style>
 </head>
 <body>

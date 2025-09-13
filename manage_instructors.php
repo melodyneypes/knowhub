@@ -160,21 +160,22 @@ while ($row = $res->fetch_assoc()) {
     </style>
 </head>
 <body>
-    <div class="d-flex">
-        <div class="sidebar d-flex flex-column p-3" style="width: 250px;">
-            <img src="<?php echo $_SESSION['user']['picture']; ?>" alt="Profile Picture" class="img-fluid rounded-circle mb-3 mx-auto" style="max-width: 70px;">
+   <div class="d-flex">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar d-flex flex-column p-3" style="width: 250px;">
+        <img src="<?php echo $_SESSION['user']['picture']; ?>" alt="Profile Picture" class="img-fluid rounded-circle mb-3 mx-auto" style="max-width: 70px;">
         <h5 class="text-center mb-4"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></h5>
         <nav class="nav flex-column">
-            <a class="nav-link" href="dashboard-admin.php"><i class="bi bi-house"></i> Home</a>
-            <a class="nav-link" href="profile_settings.php"><i class="bi bi-person"></i> Edit Profile</a>
-            <a class="nav-link" href="admin_notifications.php"><i class="bi bi-bell"></i> Notifications</a>
-            <a class="nav-link active" href="manage_instructors.php"><i class="bi bi-people"></i> Manage Subject Instructors</a>
-            <a class="nav-link" href="threads.php"><i class="bi bi-chat-dots"></i> Forums</a>
+            <a class="nav-link active" href="dashboard-admin.php"><i class="bi bi-house"></i> Home</a>
+            <a class="nav-link" href="notifications.php"> <i class="bi bi-bell"></i> Notifications</a>
+            <a class="nav-link" href="manage_instructors.php"><i class="bi bi-people"></i> Manage Subject Instructors</a>
+            <a class="nav-link" href="threads-admin.php"><i class="bi bi-chat-dots"></i> Forums</a>
             <a class="nav-link" href="browse.php"><i class="bi bi-folder"></i> Resources</a>
             <a class="nav-link" href="admin_user_logs.php"><i class="bi bi-journal-text"></i> User Logs</a>
             <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to logout?');"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            
         </nav>
-        </div>
+    </div>
         <div class="main-content flex-1">
             <div class="container-fluid py-4">
                 <main class="col-md-12 ms-sm-auto px-md-1">

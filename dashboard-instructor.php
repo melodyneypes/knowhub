@@ -11,6 +11,34 @@ if (!isset($_SESSION['user'])) {
 require 'db.php';
 
 $user_id = $_SESSION['user']['id'];
+
+// Fetch notifications for the instructor
+$notifications = [];
+$notif_stmt = $conn->prepare(
+    "SELECT n.*, u.name as sender_name 
+     FROM notifications n 
+     LEFT JOIN users u ON n.sender_id = u.id 
+     WHERE n.user_id = ? 
+     ORDER BY n.created_at DESC 
+     LIMIT 5"
+);
+$notif_stmt->bind_param("i", $user_id);
+$notif_stmt->execute();
+$notif_result = $notif_stmt->get_result();
+while ($row = $notif_result->fetch_assoc()) {
+    $notifications[] = $row;
+}
+$notif_stmt->close();
+
+// Count unread notifications
+$unread_count_stmt = $conn->prepare("SELECT COUNT(*) as unread_count FROM notifications WHERE user_id = ? AND is_read = 0");
+$unread_count_stmt->bind_param("i", $user_id);
+$unread_count_stmt->execute();
+$unread_count_result = $unread_count_stmt->get_result();
+$unread_count_row = $unread_count_result->fetch_assoc();
+$unread_count = $unread_count_row['unread_count'];
+$unread_count_stmt->close();
+
 $subjects = [];
 $stmt = $conn->prepare(
     "SELECT s.id, s.name AS title, s.description, si.block
@@ -35,26 +63,66 @@ $stmt->close();
     <title>Instructor Dashboard</title>
     <!-- Bootstrap CSS -->
     <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .notification-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            font-size: 0.7rem;
+        }
+        .notification-card {
+            border-left: 3px solid #e9ecef;
+        }
+        .notification-card.unread {
+            border-left-color: #007bff;
+            background-color: #f8f9ff;
+        }
+        .notification-icon {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.8rem;
+        }
+        .download-icon {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .reply-icon {
+            background-color: #cce7ff;
+            color: #004085;
+        }
+        .edit-request-icon {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .forum-icon {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-light bg-primary shadow-sm">
+<nav class="navbar navbar-light bg-light shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" style="color: white;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
+        <a class="navbar-brand fw-bold" style="color: #126682d1;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="dashboard-instructor.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="browse.php">Browse</a>
+                <a class="nav-link" href="subjects-handled.php">My Handled Subjects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="threads.php">Forums</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="external.php">External Resources</a>
+                <a class="nav-link" href="external-instructor.php">External Resources</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
+                <a class="nav-link" style="color: red;" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
             </li>
         </ul>
     </div>
@@ -75,56 +143,75 @@ $stmt->close();
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Move Subjects Handled below the row -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h2>Subjects Handled</h2>
+            
+            <!-- Subjects Section (right column) -->
+            <div class="col-md-8">
+                <div class="card">
+                   <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Recent Notifications</span>   <?php if ($unread_count > 0): ?>
+                        <span class="badge bg-danger notification-badge"><?php echo $unread_count; ?></span>
+                    <?php endif; ?>
                     </div>
                     <div class="card-body">
-                        <input type="text" id="subjectSearch" class="form-control mb-3" placeholder="Search subject or block...">
-                        <?php if (count($subjects) > 0): ?>
-                            <ul class="list-group" id="subjectsList">
-                                <?php foreach ($subjects as $subject): ?>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <strong><?php echo htmlspecialchars($subject['title']); ?></strong><br>
-                                            <small><?php echo htmlspecialchars($subject['description']); ?></small>
-                                        </div>
-                                        <span class="badge bg-info text-white ms-2">
-                                            Block: <?php echo htmlspecialchars($subject['block']); ?>
-                                        </span>
-                                        <a href="specific-subject.php?id=<?php echo $subject['id']; ?>" class="btn btn-primary btn-sm ms-3">View Subject</a>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
+                        <?php if (empty($notifications)): ?>
+                            <p class="text-muted mb-0">No notifications yet.</p>
                         <?php else: ?>
-                            <div class="alert alert-info">No subjects assigned.</div>
+                            <?php foreach ($notifications as $notification): ?>
+                                <div class="notification-card <?php echo $notification['is_read'] == 0 ? 'unread' : ''; ?> mb-3 p-2">
+                                    <div class="d-flex">
+                                        <div class="me-2">
+                                            <?php if (strpos($notification['type'], 'download') !== false): ?>
+                                                <div class="notification-icon download-icon">
+                                                    <i class="bi bi-download"></i>
+                                                </div>
+                                            <?php elseif (strpos($notification['type'], 'reply') !== false): ?>
+                                                <div class="notification-icon reply-icon">
+                                                    <i class="bi bi-reply"></i>
+                                                </div>
+                                            <?php elseif (strpos($notification['type'], 'edit_request') !== false): ?>
+                                                <div class="notification-icon edit-request-icon">
+                                                    <i class="bi bi-pencil"></i>
+                                                </div>
+                                            <?php elseif (strpos($notification['type'], 'forum') !== false): ?>
+                                                <div class="notification-icon forum-icon">
+                                                    <i class="bi bi-chat"></i>
+                                                </div>
+                                            <?php else: ?>
+                                                <div class="notification-icon">
+                                                    <i class="bi bi-bell"></i>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1"><?php echo htmlspecialchars($notification['title']); ?></h6>
+                                            <p class="mb-1 small"><?php echo htmlspecialchars($notification['message']); ?></p>
+                                            <small class="text-muted">
+                                                <?php 
+                                                $time_diff = time() - strtotime($notification['created_at']);
+                                                if ($time_diff < 60) {
+                                                    echo "Just now";
+                                                } elseif ($time_diff < 3600) {
+                                                    echo floor($time_diff/60) . " min ago";
+                                                } elseif ($time_diff < 86400) {
+                                                    echo floor($time_diff/3600) . " hrs ago";
+                                                } else {
+                                                    echo floor($time_diff/86400) . " days ago";
+                                                }
+                                                ?>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Bootstrap JS (optional, for responsive navbar) -->
+    
+    <!-- Bootstrap JS and Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var searchInput = document.getElementById('subjectSearch');
-    var subjectsList = document.getElementById('subjectsList');
-    if (searchInput && subjectsList) {
-        searchInput.addEventListener('keyup', function() {
-            var filter = this.value.toLowerCase();
-            var rows = subjectsList.querySelectorAll('li');
-            rows.forEach(function(row) {
-                var text = row.textContent.toLowerCase();
-                row.style.display = text.includes(filter) ? '' : 'none';
-            });
-        });
-    }
-});
-    </script>
 </body>
 </html>

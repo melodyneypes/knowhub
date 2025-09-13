@@ -1,6 +1,9 @@
 <?php
 session_start();
 require 'db.php';
+require 'vendor/autoload.php'; // Include JWT library
+
+use \Firebase\JWT\JWT;
 
 // Get file parameters
 $file_url = $_GET['file'] ?? '';
@@ -18,20 +21,20 @@ $file_extension = strtolower($file_extension);
 
 // Map extensions to OnlyOffice supported types
 $extension_map = [
-    'docx' => 'docx',
-    'doc' => 'docx',
-    'odt' => 'docx',
-    'xlsx' => 'xlsx',
-    'xls' => 'xlsx',
-    'ods' => 'xlsx',
-    'pptx' => 'pptx',
-    'ppt' => 'pptx',
-    'odp' => 'pptx',
-    'txt' => 'docx',
-    'pdf' => 'pdf'
+    'docx' => 'word',
+    'doc' => 'word',
+    'odt' => 'word',
+    'xlsx' => 'cell',
+    'xls' => 'cell',
+    'ods' => 'cell',
+    'pptx' => 'slide',
+    'ppt' => 'slide',
+    'odp' => 'slide',
+    'txt' => 'word',
+    'pdf' => 'word'
 ];
 
-$file_type = $extension_map[$file_extension] ?? 'docx';
+$file_type = $extension_map[$file_extension] ?? 'word';
 
 // Generate document key based on file URL
 $key = md5($file_url . time());
@@ -39,11 +42,17 @@ $key = md5($file_url . time());
 // Build OnlyOffice configuration
 $config = [
     "document" => [
-        "fileType" => $file_type,
+        "fileType" => $file_extension,
         "key" => $key,
         "title" => $title,
-        "url" => $file_url
+        "url" => $file_url,
+        "permissions" => [
+            "download" => true,
+            "edit" => ($file_type !== 'pdf'),
+            "print" => true
+        ]
     ],
+    "documentType" => $file_type,
     "editorConfig" => [
         "mode" => "edit",
         "lang" => "en",
@@ -54,19 +63,44 @@ $config = [
     ]
 ];
 
-// Add permissions based on file type
-if ($file_type === 'pdf') {
-    $config["document"]["permissions"] = [
-        "edit" => false,
-        "download" => true,
-        "print" => true
-    ];
-    $config["editorConfig"]["mode"] = "view";
-}
+// Define the secret key (use the one from your OnlyOffice container configuration)
+$secret_key = 'JyqijJ7aTxcBojv1IgKgKxvtS5pLhm90'; // This matches the secret in your OnlyOffice config
+
+// Generate JWT token with proper structure for OnlyOffice
+$payload = [
+    "document" => [
+        "fileType" => $file_extension,
+        "key" => $key,
+        "title" => $title,
+        "url" => $file_url,
+        "permissions" => [
+            "download" => true,
+            "edit" => ($file_type !== 'pdf'),
+            "print" => true
+        ]
+    ],
+    "documentType" => $file_type,
+    "editorConfig" => [
+        "mode" => "edit",
+        "lang" => "en",
+        "user" => [
+            "id" => $_SESSION['user']['id'] ?? 'user1',
+            "name" => $_SESSION['user']['name'] ?? 'User'
+        ]
+    ]
+];
+
+$token = JWT::encode($payload, $secret_key, 'HS256');
+
+// Add token to the config correctly for OnlyOffice
+$config["token"] = $token;
+
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Edit Document - <?php echo htmlspecialchars($title); ?></title>
     <script type="text/javascript" src="http://localhost:8082/web-apps/apps/api/documents/api.js"></script>
     <style>
@@ -78,7 +112,7 @@ if ($file_type === 'pdf') {
         }
         #placeholder {
             width: 100%;
-            height: 100vh;
+            height: auto; /* Set a specific height */
         }
         .error-message {
             padding: 20px;
@@ -113,16 +147,28 @@ if ($file_type === 'pdf') {
             }
         };
         
-        try {
-            var docEditor = new DocsAPI.DocEditor("placeholder", config);
-        } catch (e) {
-            console.error('Failed to initialize OnlyOffice:', e);
+        // Check if OnlyOffice API is loaded
+        if (typeof DocsAPI === 'undefined') {
             document.getElementById('placeholder').innerHTML = 
                 '<div class="error-message">' +
-                '<h3>OnlyOffice Error</h3>' +
-                '<p>Failed to initialize OnlyOffice editor.</p>' +
+                '<h3>OnlyOffice API Error</h3>' +
+                '<p>Failed to load OnlyOffice API.</p>' +
                 '<p>Please check if OnlyOffice Document Server is running on http://localhost:8082</p>' +
+                '<p><a href="http://localhost:8082" target="_blank">Check OnlyOffice Status</a></p>' +
                 '</div>';
+        } else {
+            try {
+                var docEditor = new DocsAPI.DocEditor("placeholder", config);
+            } catch (e) {
+                console.error('Failed to initialize OnlyOffice:', e);
+                document.getElementById('placeholder').innerHTML = 
+                    '<div class="error-message">' +
+                    '<h3>OnlyOffice Error</h3>' +
+                    '<p>Failed to initialize OnlyOffice editor.</p>' +
+                    '<p>Error: ' + e.message + '</p>' +
+                    '<p>Please check if OnlyOffice Document Server is running on http://localhost:8082</p>' +
+                    '</div>';
+            }
         }
     </script>
 </body>

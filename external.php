@@ -5,6 +5,8 @@ if (!isset($_SESSION['user'])) {
     header('Location: login.php');
     exit();
 }
+require_once 'db.php';
+$user_role = $_SESSION['user']['role'];
 
 // Example static resources array
 $resources = [
@@ -146,28 +148,43 @@ if ($search !== '') {
 </head>
 <body>
 <!-- Navbar -->
-    <nav class="navbar navbar-light bg-primary shadow-sm">
+   <nav class="navbar navbar-light bg-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" style="color: white;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
+            <a class="navbar-brand fw-bold" style="color: #126682d1;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="dashboard-student.php">Home</a>
-                </li>
+               <a class="nav-link" href="dashboard-<?php echo $user_role; ?>.php">Home</a>
+                <?php if ($user_role === 'student'): ?>
                 <li>
-                    <a class="nav-link" href="profile.php">My Subjects</a>
+                    <a class="nav-link" href="dashboard-student.php">My Subjects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="browse.php">Browse</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="forums.php">Forums</a>
+                <?php endif; ?>
+
+                <?php if ($user_role === 'instructor'): ?>
+                 <li>
+                    <a class="nav-link" href="subjects-handled.php">My Handled Subjects</a>
                 </li>
+                <?php endif; ?>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="threads.php">Forums</a>
+                </li>
+
+                 <?php if ($user_role === 'student'): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="external.php">External Resources</a>
-                </li>
+                </li> 
+                <?php else: ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
+                    <a class="nav-link" href="external-instructor.php">External Resources</a>
                 </li>
+                <?php endif; ?>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: red;" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -180,24 +197,36 @@ if ($search !== '') {
             <button class="btn btn-secondary" type="reset" onclick="window.location.href='external.php';">Reset</button>
         </div>
     </form>
-    <?php if (empty($filtered_resources)): ?>
-        <div class="alert alert-warning">No subjects or resources found.</div>
-    <?php else: ?>
-        <?php foreach ($filtered_resources as $subject => $links): ?>
-            <div class="card mb-3">
-                <div class="card-header fw-bold"><?php echo htmlspecialchars($subject); ?></div>
-                <ul class="list-group list-group-flush">
+  <?php if (empty($filtered_resources)): ?>
+    <div class="alert alert-warning">No subjects or resources found.</div>
+<?php else: ?>
+    <?php foreach ($filtered_resources as $subject => $links): ?>
+        <div class="card mb-4">
+            <div class="card-header fw-bold bg-primary text-white"><?php echo htmlspecialchars($subject); ?></div>
+            <div class="card-body">
+                <div class="row">
                     <?php foreach ($links as $link): ?>
-                        <li class="list-group-item">
-                            <a href="<?php echo htmlspecialchars($link['url']); ?>" target="_blank">
-                                <?php echo htmlspecialchars($link['title']); ?>
-                            </a>
-                        </li>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title"><?php echo htmlspecialchars($link['title']); ?></h5>
+                                    <p class="card-text text-muted">External Resource</p>
+                                    <div class="mt-auto">
+                                        <a href="<?php echo htmlspecialchars($link['url']); ?>" 
+                                           target="_blank" 
+                                           class="btn btn-primary w-100">
+                                            Visit Resource
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
-                </ul>
+                </div>
             </div>
-        <?php endforeach; ?>
-    <?php endif; ?>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>
 </div>
 </body>
 </html>
