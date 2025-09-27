@@ -1,4 +1,5 @@
-# Archive System
+# Archive System for PSU-ALAMINOS
+University Capstone Project
 
 A document management system built with PHP that allows different user roles (admin, faculty, and student) to manage and share educational resources.
 
