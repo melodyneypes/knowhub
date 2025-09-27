@@ -104,9 +104,40 @@ $stmt->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Resources - KnowHub</title>
     <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
         body {
-            background-color: #f0f2f5;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background: #fff;
+            border-right: 1px solid #eee;
+        }
+        .sidebar .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 12px 20px;
+        }
+        .sidebar .nav-link.active, .sidebar .nav-link:hover {
+            background: #e9ecef;
+            color: #126682d1;
+        }
+        .profile-img {
+            max-width: 60px;
+            margin: 20px auto 10px auto;
+            display: block;
+            border-radius: 50%;
+            border: 2px solid #126682d1;
+        }
+        .main-content {
+            padding: 40px 30px;
+        }
+        .card-header {
+            font-weight: 600;
+        }
+        .badge {
+            font-size: 0.9em;
         }
         .main-container {
             margin-top: 2rem;
@@ -189,35 +220,48 @@ $stmt->close();
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" style="color: #126682d1;" href="#">KnowHub: A Digital Archive of BSIT Resources</a>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="dashboard-<?php echo $user_role === 'student' ? 'student' : 'admin'; ?>.php">Home</a>
-                </li>
-                <?php if ($user_role === 'student'): ?>
-                <li>
-                    <a class="nav-link" href="dashboard-student.php">My Subjects</a>
-                </li>
-                <?php endif; ?>
-                <li class="nav-item">
-                    <a class="nav-link active" href="browse.php">Browse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="threads.php">Forums</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="external.php">External Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: red;" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
-                </li>
-            </ul>
+<div class="d-flex">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar d-flex flex-column p-3" style="width: 240px;">
+        <?php if ($user_role === 'admin'): ?>
+        <img src="<?php echo $_SESSION['user']['picture']; ?>" alt="Profile Picture" class="profile-img">
+        <h5 class="text-center mb-4"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></h5>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="/users/admin/dashboard-admin.php"><i class="bi bi-house"></i> Dashboard</a>
+            <a class="nav-link" href="/users/admin/notifications.php"><i class="bi bi-bell"></i> Notifications</a>
+            <a class="nav-link" href="/users/admin/manage_instructors.php"><i class="bi bi-person-badge"></i> Manage Instructors</a>
+            <a class="nav-link" href="/users/admin/threads-admin.php"><i class="bi bi-chat-dots"></i> Forums</a>
+            <a class="nav-link active" href="browse.php"><i class="bi bi-folder"></i> Resources</a>
+            <a class="nav-link" href="/users/admin/user_logs.php"><i class="bi bi-journal-text"></i> User Logs</a>
+            <a class="nav-link" href="/users/admin/create_document.php"><i class="bi bi-plus-circle"></i> Create Document</a>
+            <a class="nav-link" href="/users/admin/manage_subjects.php"><i class="bi bi-gear"></i> Manage Subjects</a>
+            <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to logout?');"><i class="bi bi-box-arrow-right"></i> Logout</a>
+        </nav>
+        <div class="mt-auto text-center">
+            <span class="fw-bold"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></span><br>
+            <span class="text-muted">Administrator</span>
         </div>
-    </nav>
-    
+        <?php else: ?>
+        <img src="<?php echo $_SESSION['user']['picture']; ?>" alt="Profile Picture" class="profile-img">
+        <h5 class="text-center mb-4"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></h5>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="dashboard-<?php echo $user_role; ?>.php"><i class="bi bi-house"></i> Dashboard</a>
+            <?php if ($user_role === 'student'): ?>
+            <a class="nav-link" href="dashboard-student.php"><i class="bi bi-book"></i> My Subjects</a>
+            <?php endif; ?>
+            <a class="nav-link active" href="browse.php"><i class="bi bi-folder"></i> Browse Resources</a>
+            <a class="nav-link" href="threads.php"><i class="bi bi-chat-dots"></i> Forums</a>
+            <a class="nav-link" href="external.php"><i class="bi bi-link"></i> External Resources</a>
+            <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to logout?');"><i class="bi bi-box-arrow-right"></i> Logout</a>
+        </nav>
+        <div class="mt-auto text-center">
+            <span class="fw-bold"><?php echo htmlspecialchars($_SESSION['user']['name']); ?></span><br>
+            <span class="text-muted"><?php echo ucfirst($user_role); ?></span>
+        </div>
+        <?php endif; ?>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content flex-grow-1">
     <div class="container main-container">
         <div class="search-container">
             <h2 class="mb-4">Browse Resources</h2>

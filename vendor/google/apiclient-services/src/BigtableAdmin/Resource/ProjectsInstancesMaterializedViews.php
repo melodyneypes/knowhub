@@ -143,7 +143,7 @@ class ProjectsInstancesMaterializedViews extends \Google\Service\Resource
    *
    * @param string $name Identifier. The unique name of the materialized view.
    * Format: `projects/{project}/instances/{instance}/materializedViews/{materiali
-   * zed_view}`
+   * zed_view}` Views: `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
    * @param MaterializedView $postBody
    * @param array $optParams Optional parameters.
    *

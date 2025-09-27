@@ -4,6 +4,9 @@ session_start();
 require 'db.php';
 require 'notify.php';
 
+require_once __DIR__ . '/users/faculty/faculty_notify.php';
+require_once __DIR__ . '/users/admin/admin_notify.php';
+
 // Check if the user is logged in
 if (!isset($_SESSION['user'])) {
     header('Location: login.php');
@@ -35,6 +38,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Send notification to instructor
             if ($forum && $forum['instructor_id'] && $forum['instructor_id'] != $id) {
                 notify_instructor_forum_post($forum['instructor_id'], $poster_name, $forum['forum_name']);
+            }
+
+             // Notify admins about the new forum post
+            if ($forum) {
+                notify_admins_new_forum_post($poster_name, $title, $forum['name'], $id);
             }
             
             // Redirect back to the forum page after successful post

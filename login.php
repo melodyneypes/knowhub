@@ -359,3 +359,24 @@
     </script>
 </body>
 </html>
+<?php
+if ($login_successful) {
+    // Set session variables, etc.
+    $_SESSION['user'] = $user_data;
+
+    // Log the login action
+    require 'db.php';
+    $user_id = $_SESSION['user']['id'];
+    $action = 'login';
+    $details = 'User logged in';
+    $role = $_SESSION['user']['role'];
+    $email = $_SESSION['user']['email'];
+    $stmt = $conn->prepare("INSERT INTO user_logs (user_id, role, email, action, timestamp, details) VALUES (?, ?, ?, ?, NOW(), ?)");
+    $stmt->bind_param("issss", $user_id, $role, $email, $action, $details);
+    $stmt->execute();
+    $stmt->close();
+
+    // Redirect to dashboard
+    header('Location: dashboard-admin.php');
+    exit();
+}

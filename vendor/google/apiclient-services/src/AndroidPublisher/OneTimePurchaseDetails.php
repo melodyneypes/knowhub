@@ -24,9 +24,15 @@ class OneTimePurchaseDetails extends \Google\Model
    */
   public $offerId;
   /**
+   * @var string
+   */
+  public $purchaseOptionId;
+  /**
    * @var int
    */
   public $quantity;
+  protected $rentalDetailsType = RentalDetails::class;
+  protected $rentalDetailsDataType = '';
 
   /**
    * @param string
@@ -43,6 +49,20 @@ class OneTimePurchaseDetails extends \Google\Model
     return $this->offerId;
   }
   /**
+   * @param string
+   */
+  public function setPurchaseOptionId($purchaseOptionId)
+  {
+    $this->purchaseOptionId = $purchaseOptionId;
+  }
+  /**
+   * @return string
+   */
+  public function getPurchaseOptionId()
+  {
+    return $this->purchaseOptionId;
+  }
+  /**
    * @param int
    */
   public function setQuantity($quantity)
@@ -55,6 +75,20 @@ class OneTimePurchaseDetails extends \Google\Model
   public function getQuantity()
   {
     return $this->quantity;
+  }
+  /**
+   * @param RentalDetails
+   */
+  public function setRentalDetails(RentalDetails $rentalDetails)
+  {
+    $this->rentalDetails = $rentalDetails;
+  }
+  /**
+   * @return RentalDetails
+   */
+  public function getRentalDetails()
+  {
+    return $this->rentalDetails;
   }
 }
 

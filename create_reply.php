@@ -4,6 +4,9 @@ session_start();
 require 'db.php';
 require 'notify.php';
 
+require 'users/admin/admin_notify.php';
+require 'users/faculty/faculty_notify.php';
+
 if (!isset($_SESSION['user'])) {
     header('Location: login.php');
     exit();
@@ -32,6 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($thread && $thread['user_id'] != $user_id) {
                 notify_post_reply($thread['user_id'], $replier_name, $thread['title']);
             }
+
+              // Notify admins about the new forum reply
+            notify_admins_forum_reply($replier_name, $thread['title'], "forum", $user_id);
+            
             
             // Redirect back to the threads page after successful reply
             header('Location: threads.php');

@@ -78,25 +78,30 @@ try {
             $user_id = $user['id'];
         }
 
-        //  Store user info in session
+        // Store user info in session
         $_SESSION['user'] = [
-            'id' => $user_id,  //  Now the session includes user ID
+            'id' => $user_id,  // Now the session includes user ID
             'email' => $email,
             'name' => $name,
             'picture' => $picture,
             'role' => $role,
         ];
 
-        // Debugging: Check if session is set (remove after testing)
-        // var_dump($_SESSION); die();
+        // Log the login action
+        $action = 'login';
+        $details = 'User logged in';
+        $stmt = $conn->prepare("INSERT INTO user_logs (user_id, role, email, action, timestamp, details) VALUES (?, ?, ?, ?, NOW(), ?)");
+        $stmt->bind_param("issss", $user_id, $role, $email, $action, $details);
+        $stmt->execute();
+        $stmt->close();
 
         // Redirect based on role
         if ($role === 'student') {
-            $redirect_url = 'dashboard-student.php';
+            $redirect_url = '/users/student/dashboard-student.php';
         } elseif ($role === 'instructor') {
-            $redirect_url = 'dashboard-instructor.php';
+            $redirect_url = '/users/faculty/dashboard-instructor.php';
         } elseif ($role === 'admin') {
-            $redirect_url = 'dashboard-admin.php';
+            $redirect_url = '/users/admin/dashboard-admin.php';
         } else {
             $redirect_url = 'login.php';
         }

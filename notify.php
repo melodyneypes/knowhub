@@ -80,84 +80,14 @@ function notify_edit_request($instructor_id, $requester_name, $resource_name, $r
  * 
  * @param int $instructor_id The ID of the instructor
  * @param string $poster_name The name of the user who posted
- * @param string $forum_name The name of the forum where the post was made
- * @param int|null $poster_id The ID of the user who posted (if available)
+ * @param string $forum_name The name of the forum room
+ * @param int|null $poster_id The ID of the poster (if available)
  * @return bool True if successful, false otherwise
  */
 function notify_instructor_forum_post($instructor_id, $poster_name, $forum_name, $poster_id = null) {
     $title = "New Forum Post";
     $message = $poster_name . " posted in your forum room: " . $forum_name;
     return send_notification($instructor_id, $title, $message, 'forum', $poster_id);
-}
-
-/**
- * Notify when a user's edit request is approved
- * 
- * @param int $user_id The ID of the user whose request was approved
- * @param string $resource_name The name of the resource that was approved for editing
- * @param int|null $approver_id The ID of the approver (if available)
- * @return bool True if successful, false otherwise
- */
-function notify_edit_approved($user_id, $resource_name, $approver_id = null) {
-    $title = "Edit Request Approved";
-    $message = "Your request to edit '" . $resource_name . "' has been approved.";
-    return send_notification($user_id, $title, $message, 'edit_approved', $approver_id);
-}
-
-/**
- * Notify when a user's edit request is declined
- * 
- * @param int $user_id The ID of the user whose request was declined
- * @param string $resource_name The name of the resource that was declined for editing
- * @param int|null $decliner_id The ID of the decliner (if available)
- * @return bool True if successful, false otherwise
- */
-function notify_edit_declined($user_id, $resource_name, $decliner_id = null) {
-    $title = "Edit Request Declined";
-    $message = "Your request to edit '" . $resource_name . "' has been declined.";
-    return send_notification($user_id, $title, $message, 'edit_declined', $decliner_id);
-}
-
-/**
- * Notify when a new resource is uploaded to a subject
- * 
- * @param int $instructor_id The ID of the instructor
- * @param string $uploader_name The name of the user who uploaded
- * @param string $resource_name The name of the uploaded resource
- * @param string $subject_name The name of the subject
- * @param int|null $uploader_id The ID of the uploader (if available)
- * @return bool True if successful, false otherwise
- */
-function notify_new_resource($instructor_id, $uploader_name, $resource_name, $subject_name, $uploader_id = null) {
-    $title = "New Resource Uploaded";
-    $message = $uploader_name . " uploaded a new resource '" . $resource_name . "' to " . $subject_name;
-    return send_notification($instructor_id, $title, $message, 'new_resource', $uploader_id);
-}
-
-/**
- * Mark a notification as read
- * 
- * @param int $notification_id The ID of the notification
- * @param int $user_id The ID of the user (for security check)
- * @return bool True if successful, false otherwise
- */
-function mark_notification_read($notification_id, $user_id) {
-    require 'db.php';
-    
-    $sql = "UPDATE notifications SET is_read = 1 WHERE id = ? AND user_id = ?";
-    $stmt = $conn->prepare($sql);
-    
-    if (!$stmt) {
-        error_log("Failed to prepare statement: " . $conn->error);
-        return false;
-    }
-    
-    $stmt->bind_param("ii", $notification_id, $user_id);
-    
-    $result = $stmt->execute();
-    $stmt->close();
-    
-    return $result;
 }
 
 /**
