@@ -12,7 +12,7 @@ $checks = [
     'php_version' => phpversion(),
     'required_files' => [],
     'database' => false,
-    'environment' => getenv('DATABASE_URL') ? 'heroku' : 'local'
+    'environment' => getenv('DATABASE_URL') ? 'render' : 'local'
 ];
 
 foreach ($required_files as $file) {

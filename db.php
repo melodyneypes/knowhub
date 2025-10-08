@@ -1,7 +1,7 @@
 <?php
-// Check if we're on Heroku (using Heroku's DATABASE_URL) or local development
+// Check if we're on Render (using RENDER_DATABASE_URL) or local development
 if (getenv('DATABASE_URL')) {
-    // Heroku deployment
+    // Render deployment
     $dbopts = parse_url(getenv('DATABASE_URL'));
     $host = $dbopts["host"];
     $db = ltrim($dbopts["path"], '/');
