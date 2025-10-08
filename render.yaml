@@ -1,6 +1,7 @@
 services:
   - type: web
     name: knowhub
+<<<<<<< HEAD
     env: node
     buildCommand: ./build.sh
     startCommand: vendor/bin/heroku-php-apache2
@@ -36,3 +37,9 @@ databases:
   - name: archive-db
     databaseName: archive
     engine: postgres
+=======
+    env: php
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:10000 -t ."
+    plan: free
+>>>>>>> 798877e90a0ff7ce6f202a34039153c26f2faecc
