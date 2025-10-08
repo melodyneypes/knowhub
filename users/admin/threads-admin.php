@@ -187,7 +187,7 @@ $result_threads = $stmt->get_result();
                 <h2 class="mb-4">/<?php echo htmlspecialchars($forum_id); ?></h2>
                 
                 <div class="post-container mb-4">
-                    <form action="create_thread.php" method="POST">
+                    <form action="../../create_thread.php" method="POST">
                         <input type="hidden" name="forum_id" value="<?php echo htmlspecialchars($forum_id); ?>">
                         <div class="d-flex align-items-center">
                              <img src="<?php echo $_SESSION['user']['picture']; ?>" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="max-width: 70px;">
@@ -219,7 +219,7 @@ $result_threads = $stmt->get_result();
 
                                 <div class="post-actions">
                                    <div class="reply-form d-none mt-3">
-                                    <form action="create_reply.php" method="POST" class="d-flex">
+                                    <form action="../../create_reply.php" method="POST" class="d-flex">
                                         <input type="hidden" name="thread_id" value="<?php echo htmlspecialchars($row['id']); ?>">
                                         <textarea class="form-control" name="content" placeholder="Write your reply here..." rows="2" required></textarea>
                                         <button type="submit" class="btn btn-primary ms-2">Post</button>
@@ -229,7 +229,7 @@ $result_threads = $stmt->get_result();
 
                                     <?php if ($row['user_id'] == $_SESSION['user']['id']): ?>
                                     <button class="btn btn-sm edit-button view-link" data-thread-id="<?php echo htmlspecialchars($row['id']); ?>">Edit</button>
-                                    <a href="delete_thread.php?id=<?php echo $row['id']; ?>" class="delete-link view-link" onclick="return confirm('Are you sure you want to delete this thread?');">Delete</a>
+                                    <a href="../../delete_thread.php?id=<?php echo $row['id']; ?>" class="delete-link view-link" onclick="return confirm('Are you sure you want to delete this thread?');">Delete</a>
 
                                     <button class="btn btn-sm btn-success save-link edit-link d-none" data-thread-id="<?php echo htmlspecialchars($row['id']); ?>">Save</button>
                                     <button class="btn btn-sm btn-secondary cancel-link edit-link d-none">Cancel</button>
@@ -311,7 +311,7 @@ $result_threads = $stmt->get_result();
 
             // Use AJAX to save changes without reloading the page
             $.ajax({
-                url: 'update_thread.php',
+                url: '../../update_thread.php',
                 type: 'POST',
                 data: {
                     thread_id: threadId,

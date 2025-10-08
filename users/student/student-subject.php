@@ -1,11 +1,11 @@
 <?php
 session_start();
 if (!isset($_SESSION['user'])) {
-    header('Location: login.php');
+    header('Location: ../../login.php');
     exit();
 }
 
-require 'db.php';
+require '../../db.php';
 
 // Get subject ID from URL
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
@@ -232,7 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_activity'])) {
                 <a class="nav-link" href="threads.php">Forums</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: red;" href="logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
+                <a class="nav-link" style="color: red;" href="../../logout.php" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
             </li>
         </ul>
     </div>

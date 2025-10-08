@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-09-28 06:35:55",
+    "message": "Successfully saved document version",
+    "resource_id": "4",
+    "user_id": 0,
+    "file_path": "uploads\/resource_4_v1759034155.docx",
+    "version_number": "1"
+}
+
+{
+    "timestamp": "2025-09-28 06:50:50",
+    "message": "Successfully saved document version",
+    "resource_id": "4",
+    "user_id": 0,
+    "file_path": "uploads\/versionsresource_4_v1759035050.docx",
+    "version_number": "1"
+}
+
+{
+    "timestamp": "2025-09-28 06:54:26",
+    "message": "Successfully saved document version",
+    "resource_id": "4",
+    "user_id": 0,
+    "file_path": "uploads\/versions\/resource_4_v1759035266.docx",
+    "version_number": "2"
+}
+

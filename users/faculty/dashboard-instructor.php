@@ -4,7 +4,7 @@ error_log("Session user: " . print_r($_SESSION['user'], true)); // Log session u
 
 // Check if the user is logged in (session variable exists)
 if (!isset($_SESSION['user'])) {
-    header('Location: ../../login.php'); // Redirect to login page if not logged in
+    header('Location: ../../index.php'); // Redirect to login page if not logged in
     exit();
 }
 

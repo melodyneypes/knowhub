@@ -279,20 +279,28 @@
             </div>
             <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="filled_blue" data-size="la"></div>
            
-            <!-- request access-->
+             <!-- request access-->
             <div class="mt-4 text-center">
-                <h5 class="text-secondary">Alumni or Graduate?</h5>
-                <p class="text-muted">If you don't have a PSU institutional account, request access here:</p>
-                <form action="alumni-requests.php" method="POST" style="max-width: 350px; margin: 0 auto;">
+                <h5 class="text-secondary">Request Guest Access</h5>
+                <p class="text-muted">If you don't have a PSU institutional account, request guest access here:</p>
+
+                <form action="/users/guest/alumni-requests.php" method="POST" style="max-width: 350px; margin: 0 auto;">
+                    <!-- Name -->
                     <div class="mb-3">
-                        <input type="text" name="alumni_name" class="form-control" placeholder="Enter your full name" required>
+                        <input type="text" name="name" class="form-control" placeholder="Enter your full name" required>
                     </div>
+
+                    <!-- Email -->
                     <div class="mb-3">
-                        <input type="email" name="alumni_email" class="form-control" placeholder="Enter your email address" required>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
                     </div>
+
+                    <!-- Reason for Accessing -->
                     <div class="mb-3">
-                        <input type="number" name="batch_year" class="form-control" placeholder="Enter your batch year (e.g., 2022)" min="1900" max="2099" required>
+                        <textarea name="access_reason" class="form-control" placeholder="Enter your reason for accessing KnowHub" rows="3" required></textarea>
                     </div>
+
+                    <!-- Submit Button -->
                     <button type="submit" class="btn btn-info w-100">Request Access</button>
                 </form>
             </div>
@@ -360,6 +368,7 @@
 </body>
 </html>
 <?php
+$login_successful = false; // Initialize the variable
 if ($login_successful) {
     // Set session variables, etc.
     $_SESSION['user'] = $user_data;

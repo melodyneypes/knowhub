@@ -102,7 +102,7 @@ $config["token"] = $token;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Edit Document - <?php echo htmlspecialchars($title); ?></title>
-    <!-- Ensure this URL is correct for your OnlyOffice Document Server -->
+    <!-- ✅ FIXED: Ensure this points to your OnlyOffice Document Server (Docker, port 8082) -->
     <script type="text/javascript" src="http://localhost:8082/web-apps/apps/api/documents/api.js"></script>
     <style>
     body {

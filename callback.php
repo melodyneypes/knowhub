@@ -32,7 +32,7 @@ try {
         $picture = $payload['picture'];
 
         // Determine the user's role based on the email
-       $role = null;
+        $role = null;
         if (strpos($email, '@psu.edu.ph') !== false && strpos($email, 'ac') !== false) {
             $role = 'student';
         } elseif (strpos($email, '@gmail.com') !== false && strpos($email, 'admn') !== false) {
@@ -40,16 +40,23 @@ try {
         } elseif (strpos($email, '@gmail.com') !== false && strpos($email,'ac') !==false) {
             $role = 'instructor';
         } elseif (strpos($email, '@gmail.com') !== false) {
-            // Check if this Gmail user is an approved alumni
-            $stmt = $conn->prepare("SELECT role FROM users WHERE email = ? AND role = 'alumni'");
+            // Check if this Gmail user is an approved guest
+            $stmt = $conn->prepare("SELECT role FROM users WHERE email = ?");
             $stmt->bind_param("s", $email);
             $stmt->execute();
             $result = $stmt->get_result();
             
             if ($result->num_rows > 0) {
-                $role = 'alumni';
+                $user_data = $result->fetch_assoc();
+                // Check if the user has guest role
+                if ($user_data['role'] === 'guest') {
+                    $role = 'guest';
+                } else {
+                    echo json_encode(['success' => false, 'message' => 'Access denied: Your account does not have guest privileges.']);
+                    exit();
+                }
             } else {
-                echo json_encode(['success' => false, 'message' => 'Access denied: Only PSU accounts and approved alumni can access this system.']);
+                echo json_encode(['success' => false, 'message' => 'Access denied: Only PSU accounts and approved guests can access this system.']);
                 exit();
             }
         } else {
@@ -80,7 +87,7 @@ try {
 
         // Store user info in session
         $_SESSION['user'] = [
-            'id' => $user_id,  // Now the session includes user ID
+            'id' => $user_id,
             'email' => $email,
             'name' => $name,
             'picture' => $picture,
@@ -102,8 +109,11 @@ try {
             $redirect_url = '/users/faculty/dashboard-instructor.php';
         } elseif ($role === 'admin') {
             $redirect_url = '/users/admin/dashboard-admin.php';
+        } elseif ($role === 'guest') {
+            $redirect_url = '/users/guest/dashboard-guests.php';
         } else {
-            $redirect_url = 'login.php';
+            echo json_encode(['success' => false, 'message' => 'Invalid user role']);
+            exit();
         }
 
         echo json_encode(['success' => true, 'redirect_url' => $redirect_url]);
@@ -111,6 +121,6 @@ try {
         echo json_encode(['success' => false, 'message' => 'Invalid ID token']);
     }
 } catch (Exception $e) {
-    echo json_encode(['success' => false, 'message' => $e->getMessage()]);
+    echo json_encode(['success' => false, 'message' => 'Authentication error: ' . $e->getMessage()]);
 }
 ?>

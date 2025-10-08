@@ -2,7 +2,7 @@
 // filepath: e:\CAP101-DANG FILES\archive-system\dashboard-admin.php
 session_start();
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
-    header('Location: ../login.php');
+    header('Location: ../../index.php');
     exit();
 }
 require '../../db.php';
@@ -38,7 +38,7 @@ $stmt->close();
 
 // Pending Alumni Requests (limit 1)
 $pending_requests = [];
-$stmt = $conn->prepare("SELECT CONCAT('New alumni registration awaiting approval for ', name, '.') AS name FROM alumni_requests WHERE status = 'pending' LIMIT 1");
+$stmt = $conn->prepare("SELECT CONCAT('New alumni registration awaiting approval for ', name, '.') AS name FROM guests_requests WHERE status = 'pending' LIMIT 1");
 $stmt->execute();
 $result = $stmt->get_result();
 while ($row = $result->fetch_assoc()) {

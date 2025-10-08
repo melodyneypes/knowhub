@@ -3,7 +3,7 @@ session_start();
 
 // Check if the user is logged in (session variable exists)
 if (!isset($_SESSION['user'])) {
-    header('Location: ../../login.php');
+    header('Location: ../../index.php');
     exit();
 }
 
@@ -153,7 +153,7 @@ $stmt->close();
                                                 <p class="card-text"><?php echo htmlspecialchars($upload['description']); ?></p>
                                                 <p class="card-text"><small class="text-muted">Uploaded: <?php echo htmlspecialchars($upload['created_at']); ?></small></p>
                                                 <a href="download.php" class="btn btn-primary" target="_blank">Download</a>
-                                                <a href="version_history.php?resource_id=<?php echo $upload['id']; ?>" class="btn btn-outline-primary">Version History</a>
+                                                <a href="../../version_history.php?resource_id=<?php echo $upload['id']; ?>" class="btn btn-outline-primary">Version History</a>
         
                                                 <!-- Embed ONLYOFFICE Docs viewer/editor -->
                                                 <a href="onlyoffice_editor.php?file=<?php echo urlencode('http://host.docker.internal:3000/' . $upload['file_path']); ?>&title=<?php echo urlencode($upload['title']); ?>" class="btn btn-success" style="margin: 5px;">View and Edit in ONLYOFFICE</a>

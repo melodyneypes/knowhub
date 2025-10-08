@@ -1,0 +1,356 @@
+{
+    "timestamp": "2025-09-28 05:45:50",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzExNTAsImV4cCI6MTc1OTAzMTQ1MH0.QlNlrQG97VBJ_vGlPMJW0FrX_6Dpxcy2OS6GiJOD5ko\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 05:46:10",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":2,\"url\":\"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_8606\/output.docx\/output.docx?md5=vsIqIgG_AK_q_xmIRHOexQ&expires=1759032071&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx\",\"history\":{},\"users\":[\"2\"],\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"lastsave\":\"2025-09-28T03:46:00.000Z\",\"notmodified\":false,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfODYwNi9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9dnNJcUlnR19BS19xX3htSVJIT2V4USZleHBpcmVzPTE3NTkwMzIwNzEmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDM6NDY6MDAuMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDMxMTcwLCJleHAiOjE3NTkwMzE0NzB9.tvhpESv_5QFSUINqGz3McNUchFNnrxy5rYYVhh-JflY\",\"filetype\":\"docx\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 05:46:22",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzExODIsImV4cCI6MTc1OTAzMTQ4Mn0.aafiTYLqvS3TUAMR3jvrkD3S_2f2L25BJsfR6dGN-AY\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 05:51:30",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":4,\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6NCwiYWN0aW9ucyI6W3sidHlwZSI6MCwidXNlcmlkIjoiMiJ9XSwiaWF0IjoxNzU5MDMxNDkwLCJleHAiOjE3NTkwMzE3OTB9.0vQcsa2XRbkUx_7_Tq4qvXEULYuVw2rManJwQt8M_Lc\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 05:51:33",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzE0OTMsImV4cCI6MTc1OTAzMTc5M30.nkQfC1RbcIPY6nQebiMOs0kLTNwHmACtZkfXtRlAo9Y\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 05:51:50",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":2,\"url\":\"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_6793\/output.docx\/output.docx?md5=ws3CUTDZRxDVVulWoWQxRg&expires=1759032411&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx\",\"changesurl\":\"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_6793\/changes.zip\/changes.zip?md5=VNST8HvTIwV8pg5QY5UsxQ&expires=1759032411&shardkey=3eda551f89db52152f7998b28a1def0d&filename=changes.zip\",\"history\":{\"serverVersion\":\"9.0.4\",\"changes\":[{\"documentSha256\":\"c607f473b3c0800fa528ecac65549bbaa766d0ada4b76e9ae978f91d4b062e1a\",\"created\":\"2025-09-28 03:51:39\",\"user\":{\"id\":\"2\",\"name\":\"Melody Neypes\"}}]},\"users\":[\"2\"],\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"lastsave\":\"2025-09-28T03:51:39.000Z\",\"notmodified\":false,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjc5My9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9d3MzQ1VURFpSeERWVnVsV29XUXhSZyZleHBpcmVzPTE3NTkwMzI0MTEmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJjaGFuZ2VzdXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjc5My9jaGFuZ2VzLnppcC9jaGFuZ2VzLnppcD9tZDU9Vk5TVDhIdlRJd1Y4cGc1UVk1VXN4USZleHBpcmVzPTE3NTkwMzI0MTEmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9Y2hhbmdlcy56aXAiLCJoaXN0b3J5Ijp7InNlcnZlclZlcnNpb24iOiI5LjAuNCIsImNoYW5nZXMiOlt7ImRvY3VtZW50U2hhMjU2IjoiYzYwN2Y0NzNiM2MwODAwZmE1MjhlY2FjNjU1NDliYmFhNzY2ZDBhZGE0Yjc2ZTlhZTk3OGY5MWQ0YjA2MmUxYSIsImNyZWF0ZWQiOiIyMDI1LTA5LTI4IDAzOjUxOjM5IiwidXNlciI6eyJpZCI6IjIiLCJuYW1lIjoiTWVsb2R5IE5leXBlcyJ9fV19LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwMzo1MTozOS4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzE1MTAsImV4cCI6MTc1OTAzMTgxMH0.FBVDDBEzF0nYbmL4YO8yx3906OWHpzUbPPrC17PoETk\",\"filetype\":\"docx\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "session_user": null
+}
+
+2025-09-28 05:56:20 === CALLBACK START ===
+2025-09-28 05:56:20 REMOTE_ADDR: 127.0.0.1
+2025-09-28 05:56:20 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 05:56:20 Created fallback PDO connection
+2025-09-28 05:56:20 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzE3ODAsImV4cCI6MTc1OTAzMjA4MH0.NDhtjoQWHPUmhgFE4uW4Z5EcmkDiX3_aKBIxeeN3MTE"}
+2025-09-28 05:56:20 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzE3ODAsImV4cCI6MTc1OTAzMjA4MH0.NDhtjoQWHPUmhgFE4uW4Z5EcmkDiX3_aKBIxeeN3MTE"}
+2025-09-28 05:56:20 resourceId=4, userId=2
+2025-09-28 05:56:20 Status is not 2 (status=1). Returning success.
+2025-09-28 05:56:36 === CALLBACK START ===
+2025-09-28 05:56:36 REMOTE_ADDR: 127.0.0.1
+2025-09-28 05:56:36 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 05:56:36 Created fallback PDO connection
+2025-09-28 05:56:36 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5313/output.docx/output.docx?md5=SJfz0VkhQXBFn5xDNXd75Q&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","changesurl":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5313/changes.zip/changes.zip?md5=TGkvrBbloW8RuqfGnbb47A&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=changes.zip","history":{"serverVersion":"9.0.4","changes":[{"documentSha256":"c607f473b3c0800fa528ecac65549bbaa766d0ada4b76e9ae978f91d4b062e1a","created":"2025-09-28 03:56:26","user":{"id":"2","name":"Melody Neypes"}}]},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T03:56:26.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTMxMy9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9U0pmejBWa2hRWEJGbjV4RE5YZDc1USZleHBpcmVzPTE3NTkwMzI2OTcmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJjaGFuZ2VzdXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTMxMy9jaGFuZ2VzLnppcC9jaGFuZ2VzLnppcD9tZDU9VEdrdnJCYmxvVzhSdXFmR25iYjQ3QSZleHBpcmVzPTE3NTkwMzI2OTcmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9Y2hhbmdlcy56aXAiLCJoaXN0b3J5Ijp7InNlcnZlclZlcnNpb24iOiI5LjAuNCIsImNoYW5nZXMiOlt7ImRvY3VtZW50U2hhMjU2IjoiYzYwN2Y0NzNiM2MwODAwZmE1MjhlY2FjNjU1NDliYmFhNzY2ZDBhZGE0Yjc2ZTlhZTk3OGY5MWQ0YjA2MmUxYSIsImNyZWF0ZWQiOiIyMDI1LTA5LTI4IDAzOjU2OjI2IiwidXNlciI6eyJpZCI6IjIiLCJuYW1lIjoiTWVsb2R5IE5leXBlcyJ9fV19LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwMzo1NjoyNi4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzE3OTYsImV4cCI6MTc1OTAzMjA5Nn0.FVPtXr-RkjPSgPwl-cNSSj3plg7ELE5tbefrINY1Y5Y","filetype":"docx"}
+2025-09-28 05:56:36 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_5313\/output.docx\/output.docx?md5=SJfz0VkhQXBFn5xDNXd75Q&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","changesurl":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_5313\/changes.zip\/changes.zip?md5=TGkvrBbloW8RuqfGnbb47A&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=changes.zip","history":{"serverVersion":"9.0.4","changes":[{"documentSha256":"c607f473b3c0800fa528ecac65549bbaa766d0ada4b76e9ae978f91d4b062e1a","created":"2025-09-28 03:56:26","user":{"id":"2","name":"Melody Neypes"}}]},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T03:56:26.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTMxMy9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9U0pmejBWa2hRWEJGbjV4RE5YZDc1USZleHBpcmVzPTE3NTkwMzI2OTcmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJjaGFuZ2VzdXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTMxMy9jaGFuZ2VzLnppcC9jaGFuZ2VzLnppcD9tZDU9VEdrdnJCYmxvVzhSdXFmR25iYjQ3QSZleHBpcmVzPTE3NTkwMzI2OTcmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9Y2hhbmdlcy56aXAiLCJoaXN0b3J5Ijp7InNlcnZlclZlcnNpb24iOiI5LjAuNCIsImNoYW5nZXMiOlt7ImRvY3VtZW50U2hhMjU2IjoiYzYwN2Y0NzNiM2MwODAwZmE1MjhlY2FjNjU1NDliYmFhNzY2ZDBhZGE0Yjc2ZTlhZTk3OGY5MWQ0YjA2MmUxYSIsImNyZWF0ZWQiOiIyMDI1LTA5LTI4IDAzOjU2OjI2IiwidXNlciI6eyJpZCI6IjIiLCJuYW1lIjoiTWVsb2R5IE5leXBlcyJ9fV19LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwMzo1NjoyNi4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzE3OTYsImV4cCI6MTc1OTAzMjA5Nn0.FVPtXr-RkjPSgPwl-cNSSj3plg7ELE5tbefrINY1Y5Y","filetype":"docx"}
+2025-09-28 05:56:36 resourceId=4, userId=2
+2025-09-28 05:56:36 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5313/output.docx/output.docx?md5=SJfz0VkhQXBFn5xDNXd75Q&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 05:56:36 Attempting to download file via cURL: http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5313/output.docx/output.docx?md5=SJfz0VkhQXBFn5xDNXd75Q&expires=1759032697&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 05:56:36 cURL httpCode=200, curlErr=, size=3653334
+2025-09-28 05:56:36 Saved file to E:\CAP101-DANG FILES\archive-system\uploads\resource_4_v1759031796.docx (3653334 bytes)
+2025-09-28 05:56:36 DB transaction failed and rolled back: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'archive2.resource_versions' doesn't exist
+2025-09-28 06:00:00 === CALLBACK START ===
+2025-09-28 06:00:00 REMOTE_ADDR: 127.0.0.1
+2025-09-28 06:00:00 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 06:00:00 Created fallback PDO connection
+2025-09-28 06:00:00 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzIwMDAsImV4cCI6MTc1OTAzMjMwMH0.ZR9ZucUFKwYcD_7WBjd68nSiJtnD9ru7t1V_CNVnoLM"}
+2025-09-28 06:00:00 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzIwMDAsImV4cCI6MTc1OTAzMjMwMH0.ZR9ZucUFKwYcD_7WBjd68nSiJtnD9ru7t1V_CNVnoLM"}
+2025-09-28 06:00:00 resourceId=4, userId=2
+2025-09-28 06:00:00 Status is not 2 (status=1). Returning success.
+2025-09-28 06:00:18 === CALLBACK START ===
+2025-09-28 06:00:18 REMOTE_ADDR: 127.0.0.1
+2025-09-28 06:00:18 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 06:00:18 Created fallback PDO connection
+2025-09-28 06:00:18 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5018/output.docx/output.docx?md5=gEd1ofCrbznV7CWF39LSFg&expires=1759032919&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":{},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:00:08.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTAxOC9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9Z0VkMW9mQ3Jiem5WN0NXRjM5TFNGZyZleHBpcmVzPTE3NTkwMzI5MTkmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6MDA6MDguMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDMyMDE4LCJleHAiOjE3NTkwMzIzMTh9.w5eLSLxwYJkq7QVNLDFYTk4hQKaW8cAe6lKZsA0exck","filetype":"docx"}
+2025-09-28 06:00:18 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_5018\/output.docx\/output.docx?md5=gEd1ofCrbznV7CWF39LSFg&expires=1759032919&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":[],"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:00:08.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTAxOC9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9Z0VkMW9mQ3Jiem5WN0NXRjM5TFNGZyZleHBpcmVzPTE3NTkwMzI5MTkmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6MDA6MDguMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDMyMDE4LCJleHAiOjE3NTkwMzIzMTh9.w5eLSLxwYJkq7QVNLDFYTk4hQKaW8cAe6lKZsA0exck","filetype":"docx"}
+2025-09-28 06:00:18 resourceId=4, userId=2
+2025-09-28 06:00:18 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5018/output.docx/output.docx?md5=gEd1ofCrbznV7CWF39LSFg&expires=1759032919&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 06:00:18 Attempting to download file via cURL: http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5018/output.docx/output.docx?md5=gEd1ofCrbznV7CWF39LSFg&expires=1759032919&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 06:00:18 cURL httpCode=200, curlErr=, size=3653474
+2025-09-28 06:00:18 Saved file to E:\CAP101-DANG FILES\archive-system\uploads\resource_4_v1759032018.docx (3653474 bytes)
+2025-09-28 06:00:18 DB transaction failed and rolled back: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+2025-09-28 12:07:15 === CALLBACK START ===
+2025-09-28 12:07:15 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:07:15 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:07:15 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI0MzUsImV4cCI6MTc1OTAzMjczNX0.JD9sT15Ca0ar5GnfMWYnxwt06z-Zgg9HQ4MRyYG-wlg"}
+2025-09-28 12:07:15 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI0MzUsImV4cCI6MTc1OTAzMjczNX0.JD9sT15Ca0ar5GnfMWYnxwt06z-Zgg9HQ4MRyYG-wlg"}
+2025-09-28 12:07:15 resourceId=4, userId=2
+2025-09-28 12:07:15 Status is not 2 (status=1). Returning success.
+2025-09-28 12:07:33 === CALLBACK START ===
+2025-09-28 12:07:33 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:07:33 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:07:33 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_6068/output.docx/output.docx?md5=k-SsA-bf8fGu5j-Bswj02A&expires=1759033354&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","changesurl":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_6068/changes.zip/changes.zip?md5=NwW85es4-Kdd6cwFpZRHhA&expires=1759033354&shardkey=3eda551f89db52152f7998b28a1def0d&filename=changes.zip","history":{"serverVersion":"9.0.4","changes":[{"documentSha256":"c607f473b3c0800fa528ecac65549bbaa766d0ada4b76e9ae978f91d4b062e1a","created":"2025-09-28 04:07:23","user":{"id":"2","name":"Melody Neypes"}}]},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:07:23.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjA2OC9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9ay1Tc0EtYmY4Zkd1NWotQnN3ajAyQSZleHBpcmVzPTE3NTkwMzMzNTQmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJjaGFuZ2VzdXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjA2OC9jaGFuZ2VzLnppcC9jaGFuZ2VzLnppcD9tZDU9TndXODVlczQtS2RkNmN3RnBaUkhoQSZleHBpcmVzPTE3NTkwMzMzNTQmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9Y2hhbmdlcy56aXAiLCJoaXN0b3J5Ijp7InNlcnZlclZlcnNpb24iOiI5LjAuNCIsImNoYW5nZXMiOlt7ImRvY3VtZW50U2hhMjU2IjoiYzYwN2Y0NzNiM2MwODAwZmE1MjhlY2FjNjU1NDliYmFhNzY2ZDBhZGE0Yjc2ZTlhZTk3OGY5MWQ0YjA2MmUxYSIsImNyZWF0ZWQiOiIyMDI1LTA5LTI4IDA0OjA3OjIzIiwidXNlciI6eyJpZCI6IjIiLCJuYW1lIjoiTWVsb2R5IE5leXBlcyJ9fV19LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDowNzoyMy4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzI0NTMsImV4cCI6MTc1OTAzMjc1M30.cKO0urCw7QdJQdiHUouMY5-IcTshQsu-_UrIeOqzMco","filetype":"docx"}
+2025-09-28 12:07:33 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_6068\/output.docx\/output.docx?md5=k-SsA-bf8fGu5j-Bswj02A&expires=1759033354&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","changesurl":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_6068\/changes.zip\/changes.zip?md5=NwW85es4-Kdd6cwFpZRHhA&expires=1759033354&shardkey=3eda551f89db52152f7998b28a1def0d&filename=changes.zip","history":{"serverVersion":"9.0.4","changes":[{"documentSha256":"c607f473b3c0800fa528ecac65549bbaa766d0ada4b76e9ae978f91d4b062e1a","created":"2025-09-28 04:07:23","user":{"id":"2","name":"Melody Neypes"}}]},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:07:23.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjA2OC9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9ay1Tc0EtYmY4Zkd1NWotQnN3ajAyQSZleHBpcmVzPTE3NTkwMzMzNTQmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJjaGFuZ2VzdXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjA2OC9jaGFuZ2VzLnppcC9jaGFuZ2VzLnppcD9tZDU9TndXODVlczQtS2RkNmN3RnBaUkhoQSZleHBpcmVzPTE3NTkwMzMzNTQmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9Y2hhbmdlcy56aXAiLCJoaXN0b3J5Ijp7InNlcnZlclZlcnNpb24iOiI5LjAuNCIsImNoYW5nZXMiOlt7ImRvY3VtZW50U2hhMjU2IjoiYzYwN2Y0NzNiM2MwODAwZmE1MjhlY2FjNjU1NDliYmFhNzY2ZDBhZGE0Yjc2ZTlhZTk3OGY5MWQ0YjA2MmUxYSIsImNyZWF0ZWQiOiIyMDI1LTA5LTI4IDA0OjA3OjIzIiwidXNlciI6eyJpZCI6IjIiLCJuYW1lIjoiTWVsb2R5IE5leXBlcyJ9fV19LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDowNzoyMy4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzI0NTMsImV4cCI6MTc1OTAzMjc1M30.cKO0urCw7QdJQdiHUouMY5-IcTshQsu-_UrIeOqzMco","filetype":"docx"}
+2025-09-28 12:07:33 resourceId=4, userId=2
+2025-09-28 12:07:33 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_6068/output.docx/output.docx?md5=k-SsA-bf8fGu5j-Bswj02A&expires=1759033354&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 12:07:33 cURL httpCode=200, curlErr=, size=3653327
+2025-09-28 12:07:33 Saved file to E:\CAP101-DANG FILES\archive-system/uploads/versions/resource_4_v1759032453.docx (3653327 bytes)
+2025-09-28 12:07:34 === CALLBACK START ===
+2025-09-28 12:07:34 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:07:34 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:07:34 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI0NTQsImV4cCI6MTc1OTAzMjc1NH0.dAtLc3BAQYkTg23SJSYOQg3U7KAcoGmBR36ADozjvpk"}
+2025-09-28 12:07:34 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI0NTQsImV4cCI6MTc1OTAzMjc1NH0.dAtLc3BAQYkTg23SJSYOQg3U7KAcoGmBR36ADozjvpk"}
+2025-09-28 12:07:34 resourceId=4, userId=2
+2025-09-28 12:07:34 Status is not 2 (status=1). Returning success.
+2025-09-28 12:11:52 === CALLBACK START ===
+2025-09-28 12:11:52 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:11:52 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:11:52 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI3MTIsImV4cCI6MTc1OTAzMzAxMn0.jzKgm_hGtYeSfjHm4rvcEKYUz_J2KLEkvLkJff-lnGU"}
+2025-09-28 12:11:52 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzI3MTIsImV4cCI6MTc1OTAzMzAxMn0.jzKgm_hGtYeSfjHm4rvcEKYUz_J2KLEkvLkJff-lnGU"}
+2025-09-28 12:11:52 resourceId=4, userId=2
+2025-09-28 12:11:52 Status is not 2 (status=1). Returning success.
+2025-09-28 12:12:48 === CALLBACK START ===
+2025-09-28 12:12:48 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:12:48 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:12:48 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5412/output.docx/output.docx?md5=zJdmApUEjkUpEp4TAtHevA&expires=1759033669&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":{},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:12:39.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTQxMi9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9ekpkbUFwVUVqa1VwRXA0VEF0SGV2QSZleHBpcmVzPTE3NTkwMzM2Njkmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6MTI6MzkuMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDMyNzY4LCJleHAiOjE3NTkwMzMwNjh9.dmtNZ2tLkJ3hiBQn5UiwTZ-RM-aA-AnFWWjsKGvP2_Y","filetype":"docx"}
+2025-09-28 12:12:48 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_5412\/output.docx\/output.docx?md5=zJdmApUEjkUpEp4TAtHevA&expires=1759033669&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":[],"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:12:39.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNTQxMi9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9ekpkbUFwVUVqa1VwRXA0VEF0SGV2QSZleHBpcmVzPTE3NTkwMzM2Njkmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6MTI6MzkuMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDMyNzY4LCJleHAiOjE3NTkwMzMwNjh9.dmtNZ2tLkJ3hiBQn5UiwTZ-RM-aA-AnFWWjsKGvP2_Y","filetype":"docx"}
+2025-09-28 12:12:48 resourceId=4, userId=2
+2025-09-28 12:12:48 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_5412/output.docx/output.docx?md5=zJdmApUEjkUpEp4TAtHevA&expires=1759033669&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 12:12:48 cURL httpCode=200, curlErr=, size=3653479
+2025-09-28 12:12:48 Saved file to E:\CAP101-DANG FILES\archive-system/uploads/versions/resource_4_v1759032768.docx (3653479 bytes)
+2025-09-28 12:23:16 === CALLBACK START ===
+2025-09-28 12:23:16 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:23:16 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:23:16 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzMzOTYsImV4cCI6MTc1OTAzMzY5Nn0.us0yZtIDKRPN4XVnwqM4QS_FeRQIY4LWquRn5FQe4cI"}
+2025-09-28 12:23:16 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzMzOTYsImV4cCI6MTc1OTAzMzY5Nn0.us0yZtIDKRPN4XVnwqM4QS_FeRQIY4LWquRn5FQe4cI"}
+2025-09-28 12:23:16 resourceId=4, userId=2, username=
+2025-09-28 12:23:16 Status is not 2 (status=1). Returning success.
+2025-09-28 12:23:34 === CALLBACK START ===
+2025-09-28 12:23:34 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:23:34 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:23:34 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_699/output.docx/output.docx?md5=upMoeFCP23hKOg_SY1oB8Q&expires=1759034315&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":{},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:23:24.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjk5L291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT11cE1vZUZDUDIzaEtPZ19TWTFvQjhRJmV4cGlyZXM9MTc1OTAzNDMxNSZzaGFyZGtleT0zZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImhpc3RvcnkiOnt9LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDoyMzoyNC4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzM0MTQsImV4cCI6MTc1OTAzMzcxNH0.blysoBzKGkrT_6bwJ-Y4xPCdWEuRuYvCmGi14YOFPvI","filetype":"docx"}
+2025-09-28 12:23:34 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_699\/output.docx\/output.docx?md5=upMoeFCP23hKOg_SY1oB8Q&expires=1759034315&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":[],"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:23:24.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfNjk5L291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT11cE1vZUZDUDIzaEtPZ19TWTFvQjhRJmV4cGlyZXM9MTc1OTAzNDMxNSZzaGFyZGtleT0zZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImhpc3RvcnkiOnt9LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDoyMzoyNC4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzM0MTQsImV4cCI6MTc1OTAzMzcxNH0.blysoBzKGkrT_6bwJ-Y4xPCdWEuRuYvCmGi14YOFPvI","filetype":"docx"}
+2025-09-28 12:23:34 resourceId=4, userId=2, username=
+2025-09-28 12:23:34 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_699/output.docx/output.docx?md5=upMoeFCP23hKOg_SY1oB8Q&expires=1759034315&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 12:23:34 cURL httpCode=200, curlErr=, size=3653473
+2025-09-28 12:23:34 Saved file to E:\CAP101-DANG FILES\archive-system/uploads/versions/resource_4_v1759033414.docx (3653473 bytes)
+2025-09-28 12:28:53 === CALLBACK START ===
+2025-09-28 12:28:53 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:28:53 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:28:53 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzM3MzMsImV4cCI6MTc1OTAzNDAzM30.8bczhpkvkcMRHPGn7aaHqBKYWxvg9FNBRneqCE6HpEU"}
+2025-09-28 12:28:53 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":1,"users":["2"],"actions":[{"type":1,"userid":"2"}],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzM3MzMsImV4cCI6MTc1OTAzNDAzM30.8bczhpkvkcMRHPGn7aaHqBKYWxvg9FNBRneqCE6HpEU"}
+2025-09-28 12:28:53 resourceId=4, userId=2
+2025-09-28 12:28:53 Status is not 2 (status=1). Returning success.
+2025-09-28 12:29:09 === CALLBACK START ===
+2025-09-28 12:29:09 REMOTE_ADDR: 127.0.0.1
+2025-09-28 12:29:09 REQUEST_URI: /onlyoffice_callback.php?resourceId=4
+2025-09-28 12:29:09 RAW BODY: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_827/output.docx/output.docx?md5=9kuOARgBIusQInhiVICX7A&expires=1759034650&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":{},"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:29:00.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfODI3L291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT05a3VPQVJnQkl1c1FJbmhpVklDWDdBJmV4cGlyZXM9MTc1OTAzNDY1MCZzaGFyZGtleT0zZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImhpc3RvcnkiOnt9LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDoyOTowMC4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzM3NDksImV4cCI6MTc1OTAzNDA0OX0.scfdCFldda83kIVtKYYqJ3ehuwO8Gl4kGS5jBL12lrM","filetype":"docx"}
+2025-09-28 12:29:09 PARSED JSON: {"key":"3eda551f89db52152f7998b28a1def0d","status":2,"url":"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_827\/output.docx\/output.docx?md5=9kuOARgBIusQInhiVICX7A&expires=1759034650&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx","history":[],"users":["2"],"actions":[{"type":0,"userid":"2"}],"lastsave":"2025-09-28T04:29:00.000Z","notmodified":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfODI3L291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT05a3VPQVJnQkl1c1FJbmhpVklDWDdBJmV4cGlyZXM9MTc1OTAzNDY1MCZzaGFyZGtleT0zZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImhpc3RvcnkiOnt9LCJ1c2VycyI6WyIyIl0sImFjdGlvbnMiOlt7InR5cGUiOjAsInVzZXJpZCI6IjIifV0sImxhc3RzYXZlIjoiMjAyNS0wOS0yOFQwNDoyOTowMC4wMDBaIiwibm90bW9kaWZpZWQiOmZhbHNlLCJmaWxldHlwZSI6ImRvY3giLCJpYXQiOjE3NTkwMzM3NDksImV4cCI6MTc1OTAzNDA0OX0.scfdCFldda83kIVtKYYqJ3ehuwO8Gl4kGS5jBL12lrM","filetype":"docx"}
+2025-09-28 12:29:09 resourceId=4, userId=2
+2025-09-28 12:29:09 Status=2 detected. downloadUrl=http://localhost:8082/cache/files/data/3eda551f89db52152f7998b28a1def0d_827/output.docx/output.docx?md5=9kuOARgBIusQInhiVICX7A&expires=1759034650&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx
+2025-09-28 12:29:09 cURL httpCode=200, curlErr=, size=3653470
+2025-09-28 12:29:09 Saved file to E:\CAP101-DANG FILES\archive-system/uploads/versions/resource_4_v1759033749.docx (3653470 bytes)
+{
+    "timestamp": "2025-09-28 06:35:38",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzQxMzgsImV4cCI6MTc1OTAzNDQzOH0.YTzAisiCNMsjaf8B-MDWxvi9AZD-XveQl7kyvuk24O4\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:35:55",
+    "input": "{\"key\":\"3eda551f89db52152f7998b28a1def0d\",\"status\":2,\"url\":\"http:\/\/localhost:8082\/cache\/files\/data\/3eda551f89db52152f7998b28a1def0d_3589\/output.docx\/output.docx?md5=W5jlmy0_7ZS2bolbdS4-Ng&expires=1759035056&shardkey=3eda551f89db52152f7998b28a1def0d&filename=output.docx\",\"history\":{},\"users\":[\"2\"],\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"lastsave\":\"2025-09-28T04:35:45.000Z\",\"notmodified\":false,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzZWRhNTUxZjg5ZGI1MjE1MmY3OTk4YjI4YTFkZWYwZCIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvM2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGRfMzU4OS9vdXRwdXQuZG9jeC9vdXRwdXQuZG9jeD9tZDU9VzVqbG15MF83WlMyYm9sYmRTNC1OZyZleHBpcmVzPTE3NTkwMzUwNTYmc2hhcmRrZXk9M2VkYTU1MWY4OWRiNTIxNTJmNzk5OGIyOGExZGVmMGQmZmlsZW5hbWU9b3V0cHV0LmRvY3giLCJoaXN0b3J5Ijp7fSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6MzU6NDUuMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDM0MTU1LCJleHAiOjE3NTkwMzQ0NTV9.g2QDsKSq-l1Ke8-am93NEcAHGFcGQqZEsWE_z0pDH8I\",\"filetype\":\"docx\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:35:55",
+    "message": "Received callback with file data",
+    "resource_id": "4",
+    "user_id": 0,
+    "has_download_url": true,
+    "has_file_content": false,
+    "status": 2
+}
+
+{
+    "timestamp": "2025-09-28 06:35:55",
+    "message": "Starting database operations",
+    "resource_id": "4",
+    "user_id": 0
+}
+
+{
+    "timestamp": "2025-09-28 06:46:04",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzQ3NjQsImV4cCI6MTc1OTAzNTA2NH0.hIkzfhk6qBDnOW4AESRszXtkCqSEpy-KeHdOkRv0sO4\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:46:26",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":4,\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6NCwiYWN0aW9ucyI6W3sidHlwZSI6MCwidXNlcmlkIjoiMiJ9XSwiaWF0IjoxNzU5MDM0Nzg2LCJleHAiOjE3NTkwMzUwODZ9.0sviWAmaIgkZvxDGnA9Vurp5yZO0Z8u5tUP2lCKM96g\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:46:28",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzQ3ODgsImV4cCI6MTc1OTAzNTA4OH0.yogG141KubQ8lFVbBLj3Mnx00QP3EOrrGHI6TvIwZKk\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:46:34",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":4,\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6NCwiYWN0aW9ucyI6W3sidHlwZSI6MCwidXNlcmlkIjoiMiJ9XSwiaWF0IjoxNzU5MDM0Nzk0LCJleHAiOjE3NTkwMzUwOTR9.QRRiPCPa6ZXriSSfatynWyDJ-nzrQ3Dz3XJzBXqTc88\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:46:37",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzQ3OTcsImV4cCI6MTc1OTAzNTA5N30.sRu21_ci9WSxLEPWTQlF-85e7z1i5Psba5KL5NmEF7o\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:46:45",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":4,\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6NCwiYWN0aW9ucyI6W3sidHlwZSI6MCwidXNlcmlkIjoiMiJ9XSwiaWF0IjoxNzU5MDM0ODA1LCJleHAiOjE3NTkwMzUxMDV9.3IhVb8kUmUGsYnXi6MO1-Bvta-RjuQot3Jl9tapWUGw\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:48:56",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzQ5MzYsImV4cCI6MTc1OTAzNTIzNn0.MGzHQgHNvwEpKyH2ebL720JmbWWTPPgQ_lL5dgokLE4\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:49:02",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":4,\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6NCwiYWN0aW9ucyI6W3sidHlwZSI6MCwidXNlcmlkIjoiMiJ9XSwiaWF0IjoxNzU5MDM0OTQyLCJleHAiOjE3NTkwMzUyNDJ9.Nsty9t49VLbj0EuxEpBoXZwBMJSXkOVotCR2SsnDSsY\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:50:09",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzUwMDksImV4cCI6MTc1OTAzNTMwOX0.D5CkmODxUJxIb74bX2j297Ioxw7T9iKObAQhJp1fS5A\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:50:50",
+    "input": "{\"key\":\"2da9ed93a540e583d0fff9c97ce735cc\",\"status\":2,\"url\":\"http:\/\/localhost:8082\/cache\/files\/data\/2da9ed93a540e583d0fff9c97ce735cc_256\/output.docx\/output.docx?md5=N-WSICMlwWiV3Hy6BZ-hhw&expires=1759035951&shardkey=2da9ed93a540e583d0fff9c97ce735cc&filename=output.docx\",\"changesurl\":\"http:\/\/localhost:8082\/cache\/files\/data\/2da9ed93a540e583d0fff9c97ce735cc_256\/changes.zip\/changes.zip?md5=qJK-aLoPRTJensCvhzTblA&expires=1759035951&shardkey=2da9ed93a540e583d0fff9c97ce735cc&filename=changes.zip\",\"history\":{\"serverVersion\":\"9.0.4\",\"changes\":[{\"documentSha256\":\"5e137a89cc81f9e747ed0104f79bef9dfc2b418055f04adf8a533bf1a6539495\",\"created\":\"2025-09-28 04:50:38\",\"user\":{\"id\":\"2\",\"name\":\"Melody Neypes\"}}]},\"users\":[\"2\"],\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"lastsave\":\"2025-09-28T04:50:38.000Z\",\"notmodified\":false,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvMmRhOWVkOTNhNTQwZTU4M2QwZmZmOWM5N2NlNzM1Y2NfMjU2L291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT1OLVdTSUNNbHdXaVYzSHk2QlotaGh3JmV4cGlyZXM9MTc1OTAzNTk1MSZzaGFyZGtleT0yZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjYyZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImNoYW5nZXN1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODIvY2FjaGUvZmlsZXMvZGF0YS8yZGE5ZWQ5M2E1NDBlNTgzZDBmZmY5Yzk3Y2U3MzVjY18yNTYvY2hhbmdlcy56aXAvY2hhbmdlcy56aXA_bWQ1PXFKSy1hTG9QUlRKZW5zQ3ZoelRibEEmZXhwaXJlcz0xNzU5MDM1OTUxJnNoYXJka2V5PTJkYTllZDkzYTU0MGU1ODNkMGZmZjljOTdjZTczNWNjJmZpbGVuYW1lPWNoYW5nZXMuemlwIiwiaGlzdG9yeSI6eyJzZXJ2ZXJWZXJzaW9uIjoiOS4wLjQiLCJjaGFuZ2VzIjpbeyJkb2N1bWVudFNoYTI1NiI6IjVlMTM3YTg5Y2M4MWY5ZTc0N2VkMDEwNGY3OWJlZjlkZmMyYjQxODA1NWYwNGFkZjhhNTMzYmYxYTY1Mzk0OTUiLCJjcmVhdGVkIjoiMjAyNS0wOS0yOCAwNDo1MDozOCIsInVzZXIiOnsiaWQiOiIyIiwibmFtZSI6Ik1lbG9keSBOZXlwZXMifX1dfSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6NTA6MzguMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDM1MDUwLCJleHAiOjE3NTkwMzUzNTB9.mYU0OABAn7C_fAsvg5ZSM6Q_FuKE1tw7t7rEimglqt8\",\"filetype\":\"docx\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:50:50",
+    "message": "Received callback with file data",
+    "resource_id": "4",
+    "user_id": 0,
+    "has_download_url": true,
+    "has_file_content": false,
+    "status": 2
+}
+
+{
+    "timestamp": "2025-09-28 06:50:50",
+    "message": "Starting database operations",
+    "resource_id": "4",
+    "user_id": 0
+}
+
+{
+    "timestamp": "2025-09-28 06:53:57",
+    "input": "{\"key\":\"4401d77f0f69577b2b5c96b257227bda\",\"status\":1,\"users\":[\"2\"],\"actions\":[{\"type\":1,\"userid\":\"2\"}],\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiI0NDAxZDc3ZjBmNjk1NzdiMmI1Yzk2YjI1NzIyN2JkYSIsInN0YXR1cyI6MSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjoxLCJ1c2VyaWQiOiIyIn1dLCJpYXQiOjE3NTkwMzUyMzcsImV4cCI6MTc1OTAzNTUzN30.RXsoHrm9NIG7VhkX2hFa0qH01ce5fjsie08ldIbX4X8\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:54:26",
+    "input": "{\"key\":\"4401d77f0f69577b2b5c96b257227bda\",\"status\":2,\"url\":\"http:\/\/localhost:8082\/cache\/files\/data\/4401d77f0f69577b2b5c96b257227bda_951\/output.docx\/output.docx?md5=mHdR63vv4vA4FKzvf7aWvw&expires=1759036167&shardkey=4401d77f0f69577b2b5c96b257227bda&filename=output.docx\",\"changesurl\":\"http:\/\/localhost:8082\/cache\/files\/data\/4401d77f0f69577b2b5c96b257227bda_951\/changes.zip\/changes.zip?md5=JwlhDo5Fp3vD48E_XoRyLA&expires=1759036167&shardkey=4401d77f0f69577b2b5c96b257227bda&filename=changes.zip\",\"history\":{\"serverVersion\":\"9.0.4\",\"changes\":[{\"documentSha256\":\"2cd2f54f2889a75b942362fcd3a015db1ca2fdf5a043354e8b26620ed4f0877d\",\"created\":\"2025-09-28 04:54:09\",\"user\":{\"id\":\"2\",\"name\":\"Melody Neypes\"}}]},\"users\":[\"2\"],\"actions\":[{\"type\":0,\"userid\":\"2\"}],\"lastsave\":\"2025-09-28T04:54:13.000Z\",\"notmodified\":false,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiI0NDAxZDc3ZjBmNjk1NzdiMmI1Yzk2YjI1NzIyN2JkYSIsInN0YXR1cyI6MiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgyL2NhY2hlL2ZpbGVzL2RhdGEvNDQwMWQ3N2YwZjY5NTc3YjJiNWM5NmIyNTcyMjdiZGFfOTUxL291dHB1dC5kb2N4L291dHB1dC5kb2N4P21kNT1tSGRSNjN2djR2QTRGS3p2ZjdhV3Z3JmV4cGlyZXM9MTc1OTAzNjE2NyZzaGFyZGtleT00NDAxZDc3ZjBmNjk1NzdiMmI1Yzk2YjI1NzIyN2JkYSZmaWxlbmFtZT1vdXRwdXQuZG9jeCIsImNoYW5nZXN1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODIvY2FjaGUvZmlsZXMvZGF0YS80NDAxZDc3ZjBmNjk1NzdiMmI1Yzk2YjI1NzIyN2JkYV85NTEvY2hhbmdlcy56aXAvY2hhbmdlcy56aXA_bWQ1PUp3bGhEbzVGcDN2RDQ4RV9Yb1J5TEEmZXhwaXJlcz0xNzU5MDM2MTY3JnNoYXJka2V5PTQ0MDFkNzdmMGY2OTU3N2IyYjVjOTZiMjU3MjI3YmRhJmZpbGVuYW1lPWNoYW5nZXMuemlwIiwiaGlzdG9yeSI6eyJzZXJ2ZXJWZXJzaW9uIjoiOS4wLjQiLCJjaGFuZ2VzIjpbeyJkb2N1bWVudFNoYTI1NiI6IjJjZDJmNTRmMjg4OWE3NWI5NDIzNjJmY2QzYTAxNWRiMWNhMmZkZjVhMDQzMzU0ZThiMjY2MjBlZDRmMDg3N2QiLCJjcmVhdGVkIjoiMjAyNS0wOS0yOCAwNDo1NDowOSIsInVzZXIiOnsiaWQiOiIyIiwibmFtZSI6Ik1lbG9keSBOZXlwZXMifX1dfSwidXNlcnMiOlsiMiJdLCJhY3Rpb25zIjpbeyJ0eXBlIjowLCJ1c2VyaWQiOiIyIn1dLCJsYXN0c2F2ZSI6IjIwMjUtMDktMjhUMDQ6NTQ6MTMuMDAwWiIsIm5vdG1vZGlmaWVkIjpmYWxzZSwiZmlsZXR5cGUiOiJkb2N4IiwiaWF0IjoxNzU5MDM1MjY2LCJleHAiOjE3NTkwMzU1NjZ9.uCkztksEnutagwhnkRCDO9MwKN2tYfgtUA9TVupQAqo\",\"filetype\":\"docx\"}",
+    "get_params": {
+        "resourceId": "4"
+    },
+    "post_params": [],
+    "session_user": null
+}
+
+{
+    "timestamp": "2025-09-28 06:54:26",
+    "message": "Received callback with file data",
+    "resource_id": "4",
+    "user_id": 0,
+    "has_download_url": true,
+    "has_file_content": false,
+    "status": 2
+}
+
+{
+    "timestamp": "2025-09-28 06:54:26",
+    "message": "Starting database operations",
+    "resource_id": "4",
+    "user_id": 0
+}
+
