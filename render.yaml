@@ -1,45 +1,7 @@
 services:
   - type: web
     name: knowhub
-<<<<<<< HEAD
-    env: node
-    buildCommand: ./build.sh
-    startCommand: vendor/bin/heroku-php-apache2
-    envVars:
-      - key: GOOGLE_CLIENT_ID
-        value: "207510262129-19qlbi8qqudppurf1juulig88qd74qra.apps.googleusercontent.com"
-      - key: GOOGLE_CLIENT_SECRET
-        value: "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"
-      - key: MEGA_EMAIL
-        value: "your@email.com"
-      - key: MEGA_PASSWORD
-        value: "your-mega-password"
-      - key: B2_KEY_ID
-        value: "your-b2-key-id"
-      - key: B2_APP_KEY
-        value: "your-b2-app-key"
-      - key: B2_BUCKET
-        value: "your-b2-bucket"
-      - key: FIREBASE_PROJECT_ID
-        value: "your-project-id"
-      - key: FIREBASE_API_KEY
-        value: "your-api-key"
-      - key: FIREBASE_BUCKET
-        value: "your-bucket-name"
-      - key: MEDIAFIRE_EMAIL
-        value: "your@email.com"
-      - key: MEDIAFIRE_PASSWORD
-        value: "your-password"
-      - key: MEDIAFIRE_TOKEN
-        value: "your-dev-token"
-
-databases:
-  - name: archive-db
-    databaseName: archive
-    engine: postgres
-=======
     env: php
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:10000 -t ."
     plan: free
->>>>>>> 798877e90a0ff7ce6f202a34039153c26f2faecc
+    buildCommand: "echo 'No build step needed'"
+    startCommand: "php -S 0.0.0.0:10000 -t ."
