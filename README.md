@@ -14,12 +14,38 @@ A document management system built with PHP that allows different user roles (ad
 
 ## Installation
 
-1. Clone the repository
-2. Install PHP dependencies using Composer:
-3. Install JavaScript dependencies using npm:
-4. Set up your database and configure the connection in `db.php`
-5. Create an `.env` file based on `.env.example` (if available) and configure your environment variables
-6. Ensure the `uploads` directory is writable
+The offline environment is strictly for testing modules and debugging code.
+Prerequisites
+Before you begin, make sure the following are installed on your machine:
+•	PHP
+•	Composer
+•	MySQL (or MariaDB)
+•	Git
+•	A PHP built-in server
+
+Installation Steps
+1. Clone the Repository
+Open a terminal and run:
+bashgit clone https://github.com/melodyneypes/knowhub.git
+cd knowhub
+2. Install PHP Dependencies
+From the project root, run:
+bashcomposer install
+3. Set Up the Database
+Create a local database and import the SQL schema:
+bashmysql -u root -p -e "CREATE DATABASE knowhub_db CHARACTER SET utf8mb4;"
+mysql -u root -p knowhub_db < "knowhub_db (3).sql"
+Then open db.php and update it with your local database credentials.
+4. Configure Local Settings
+Edit the values in config files such as b2-config.php to use your local or test credentials.
+Never commit real API keys or secrets to the repository.
+5. Start the Local Server
+Right-click the project folder and select PHP Server: Serve Project
+
+Notes:
+Run npm install only if you need frontend packages; it is not required for basic local testing.
+Skip queue and background workers unless your specific test scenario requires them.
+
 
 ## Usage
 
